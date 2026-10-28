@@ -1,0 +1,7 @@
+node_modules/
+dist/
+_ref/
+vibe_images/
+*.log
+.DS_Store
+.vercel/

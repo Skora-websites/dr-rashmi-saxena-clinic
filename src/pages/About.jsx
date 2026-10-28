@@ -1,0 +1,133 @@
+import { Link } from 'react-router-dom'
+import Seo from '../components/Seo'
+import PageHero from '../components/PageHero'
+import Eyebrow from '../components/Eyebrow'
+import Provider from '../components/Provider'
+import Why from '../components/Why'
+import PageCta from '../components/PageCta'
+import { clinic, credentials } from '../data/content'
+
+export default function About() {
+  return (
+    <>
+      <Seo
+        title="About Dr Rashmi Saxena — 20+ Years in Women's Health | Gaur City 2"
+        description="Dr Rashmi Saxena is a senior obstetrician, gynaecologist and fertility specialist in Gaur City 2, Greater Noida. MBBS (University of Delhi), MD (Lady Hardinge Medical College), AOGD & FOGSI member."
+      />
+      <PageHero
+        eyebrow="About Dr Rashmi Saxena"
+        title="Two decades of women's health care"
+        text="Senior obstetrician, gynaecologist and fertility specialist — combining clinical experience with calm, unhurried care for women at every stage of life."
+      >
+        <Link to="/book" className="home-hero_button w-inline-block">
+          <div className="home-hero_button-text">Book a Consultation</div>
+        </Link>
+        <Link to="/services" className="home-hero_link w-inline-block">
+          <div className="home-hero_link-text">Explore Services</div>
+          <img
+            src="/assets/template/home-icon-arrow-right.webp"
+            loading="lazy"
+            width="24"
+            height="24"
+            alt=""
+            className="home-hero_link-icon"
+          />
+        </Link>
+      </PageHero>
+
+      <Provider />
+
+      <section className="section_about">
+        <div className="padding-global">
+          <div className="container-large">
+            <div className="padding-section-medium">
+              <div className="about_component">
+                <div className="about_content">
+                  <Eyebrow dark>Credentials &amp; Memberships</Eyebrow>
+                  <h2 className="about_heading heading-style-h2" data-split>
+                    Senior Obstetrician, Gynaecologist &amp; Fertility Specialist
+                  </h2>
+                  <p className="about_text">
+                    Dr Rashmi Saxena combines two decades of clinical mastery with compassionate,
+                    unhurried care. From pregnancy and delivery to fertility, PCOS and
+                    gynaecological surgery, every patient receives personalised attention tailored
+                    to her needs.
+                  </p>
+                  <p className="about_text">
+                    She completed her MBBS from the University of Delhi and her MD in Obstetrics
+                    &amp; Gynaecology from Lady Hardinge Medical College, New Delhi. She has
+                    advanced clinical training in infertility assessment, ovulation induction and
+                    assisted reproductive technologies.
+                  </p>
+                  <p className="about_text">
+                    As a visiting consultant at premier multispeciality hospitals in Noida — Cloud
+                    9, Yatharth and Motherland Hospital — she performs deliveries and advanced
+                    gynaecological surgeries with the highest standards of safety and care.
+                  </p>
+                  <ul className="about_credentials">
+                    {credentials.map((item) => (
+                      <li className="about_credential" key={item}>
+                        <span className="about_credential-mark" aria-hidden="true">
+                          ✓
+                        </span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <aside className="about_aside">
+                  <div className="about_brand-card">
+                    <img
+                      src="/assets/clinic/logo.png"
+                      width="1024"
+                      height="341"
+                      alt="Dr. Rashmi Saxena's Women's Clinic logo"
+                      className="about_logo"
+                    />
+                    <p className="about_brand-text">
+                      Best Gynaecologist Dr Rashmi Saxena · Gaur City 2, Greater Noida
+                    </p>
+                  </div>
+                  <img
+                    src="/assets/clinic/signboard.jpg"
+                    loading="lazy"
+                    width="1500"
+                    height="1125"
+                    alt="The clinic signboard at 14th Avenue High Street Market, Gaur City 2"
+                    className="about_image"
+                  />
+                  <div className="about_facts">
+                    <div className="about_fact">
+                      <span className="about_fact-label">Consulting at</span>
+                      <span className="about_fact-value">{clinic.addressShort}</span>
+                    </div>
+                    <div className="about_fact">
+                      <span className="about_fact-label">Google rating</span>
+                      <span className="about_fact-value">
+                        {clinic.rating} ★ · {clinic.reviewCount} reviews
+                      </span>
+                    </div>
+                    <div className="about_fact">
+                      <span className="about_fact-label">Appointments</span>
+                      <a href={clinic.phoneHref} className="about_fact-link">
+                        {clinic.phoneDisplay}
+                      </a>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Why />
+
+      <PageCta
+        eyebrow="About Your Visit"
+        title="Care that starts with listening"
+        text="The first consultation is unhurried. We talk through your history and concerns, then explain the plan and the cost before anything is booked."
+      />
+    </>
+  )
+}
