@@ -932,6 +932,127 @@ html.menu-open .navbar_logo-link {
   font-weight: 600;
 }
 
+.about_intro {
+  max-width: 58rem;
+}
+
+.about_intro-heading {
+  margin-top: 1.25rem;
+  max-width: 46rem;
+  color: var(--brand-purple);
+  font-family: Manrope, sans-serif;
+  font-size: clamp(2.1rem, 3.6vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+}
+
+.about_intro-body {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 3rem;
+  margin-top: 1.75rem;
+}
+
+.about_intro-body .about_text {
+  margin-top: 0;
+}
+
+.about_intro-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.75rem;
+}
+
+.about_intro-card {
+  padding: 1.6rem 1.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(99, 59, 145, 0.14);
+  background-color: rgba(255, 255, 255, 0.78);
+}
+
+.about_intro-title {
+  color: var(--brand-purple);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.about_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.about_tag {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(192, 68, 160, 0.24);
+  background-color: var(--brand-blush);
+  color: var(--brand-purple);
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+.about_intro-text {
+  margin-top: 1rem;
+  color: var(--brand-slate);
+  opacity: 0.84;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.about_note {
+  margin-top: 1.5rem;
+  padding: 1.6rem 1.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(99, 59, 145, 0.16);
+  background-image: linear-gradient(120deg, rgba(192, 68, 160, 0.1), rgba(99, 59, 145, 0.08));
+}
+
+.about_note-label {
+  display: block;
+  color: var(--brand-magenta);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.about_note-text {
+  margin-top: 0.65rem;
+  max-width: 46rem;
+  color: var(--brand-slate);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.about_divider {
+  height: 1px;
+  margin: 3.5rem 0;
+  background-image: linear-gradient(90deg, rgba(99, 59, 145, 0.26), rgba(99, 59, 145, 0));
+}
+
+@media screen and (max-width: 767px) {
+  .about_intro-body,
+  .about_intro-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about_intro-body {
+    gap: 1.25rem 0;
+  }
+
+  .about_divider {
+    margin: 2.5rem 0;
+  }
+}
+
 /* ---------- services index ---------- */
 .section_service-index {
   background-color: var(--brand-lavender);

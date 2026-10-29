@@ -239,7 +239,7 @@ export const reasons = [
   {
     icon: '/assets/template/icon-why-licensed.webp',
     title: 'MD, Obs & Gynaecology',
-    text: 'MBBS from the University of Delhi and MD from Lady Hardinge Medical College, New Delhi.',
+    text: 'MBBS from Maulana Azad Medical College, Delhi and MD from Lady Hardinge Medical College, New Delhi.',
   },
   {
     icon: '/assets/template/icon-why-traceable.webp',
@@ -249,17 +249,26 @@ export const reasons = [
   {
     icon: '/assets/template/icon-why-consultation.webp',
     title: 'Partner Hospitals',
-    text: 'Deliveries and surgeries supported at Cloud 9, Yatharth and Motherland hospitals, Noida.',
+    text: 'Associated with Sarvodaya and LYF Hospital, plus other hospitals offering economical packages.',
   },
 ]
 
+export const focusAreas = [
+  'Antenatal Care',
+  'Pregnancy Care',
+  'Vaginal Hysterectomy',
+  'Avoiding Pregnancy',
+  'Menopause Advice',
+  'Laser Vaginal Tightening',
+]
+
 export const credentials = [
-  'MBBS, University of Delhi',
-  'MD (Obstetrics & Gynaecology), Lady Hardinge Medical College',
-  'Trained in Assisted Reproductive Techniques (ART)',
+  'MBBS — Maulana Azad Medical College, Delhi',
+  'MD (Obstetrics & Gynaecology) — Lady Hardinge Medical College',
+  'Training in Assisted Reproductive Techniques (Infertility) — Institute of Reproductive Medicine, Kolkata',
   'Member — AOGD & FOGSI',
   'Visiting Consultant — Cloud 9, Yatharth, Motherland Hospitals',
-  'Formerly at Lady Hardinge & LNJP Hospital, Delhi',
+  'Associated with Sarvodaya & LYF Hospital, with economical packages',
 ]
 
 export const visitSteps = [
