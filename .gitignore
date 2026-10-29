@@ -5,3 +5,6 @@ vibe_images/
 *.log
 .DS_Store
 .vercel/
+
+.vercel
+.env*

@@ -1,15 +1,8 @@
 import { useState } from 'react'
 import Eyebrow from './Eyebrow'
-import { clinic } from '../data/content'
+import { clinic, services } from '../data/content'
 
-const interests = [
-  'Pregnancy Care',
-  'Fertility Care',
-  'PCOS & Hormones',
-  'Screening & PAP',
-  'Gynae Surgery',
-  'General Consultation',
-]
+const interests = [...services.map((service) => service.title), 'General Consultation']
 
 const times = ['6:30 PM', '7:00 PM', '7:30 PM', '8:00 PM', '11:30 AM', '12:00 PM', '12:30 PM', '1:00 PM']
 

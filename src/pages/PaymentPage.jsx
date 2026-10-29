@@ -13,7 +13,7 @@ export default function PaymentPage() {
       <PageHero
         eyebrow="Payment Options"
         title="Fees you can see upfront"
-        text="The consultation fee is ₹500. Anything beyond that — tests, scans, procedures — is quoted in advance so you can decide before you agree."
+        text="The consultation fee is ₹700 and is valid for 3 days. Anything beyond that — tests, scans, procedures — is quoted in advance so you can decide before you agree."
       />
       <Payment />
       <PageCta

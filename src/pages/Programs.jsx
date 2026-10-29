@@ -21,7 +21,7 @@ export default function Programs() {
       <PageCta
         eyebrow="Fees & Payments"
         title="Fees with no surprises"
-        text="The consultation fee is ₹500. Tests, scans and procedures are quoted in advance, and payments are accepted by UPI or cash at the clinic."
+        text="The consultation fee is ₹700 and is valid for 3 days. Tests, scans and procedures are quoted in advance, and payments are accepted by UPI or cash at the clinic."
       />
     </>
   )

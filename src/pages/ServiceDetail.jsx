@@ -95,8 +95,9 @@ export default function ServiceDetail() {
                       <span className="service-detail_price-unit">/ {service.unit}</span>
                     </div>
                     <p className="service-detail_card-text">
-                      Fees for scans, tests and procedures are explained before anything is
-                      booked. Payments by UPI or cash at the clinic.
+                      The consultation fee is valid for 3 days. Fees for scans, tests and
+                      procedures are explained before anything is booked. Payments by UPI or cash
+                      at the clinic.
                     </p>
                     <Link to="/book" className="service-detail_button">
                       Book an Appointment

@@ -4,8 +4,8 @@ const steps = [
   {
     title: '01 - Know the Fee',
     icon: '/assets/template/icon-pay-treatment.webp',
-    heading: '₹500, explained upfront',
-    text: 'The consultation is ₹500. Tests and scans are quoted before they are ordered — no surprises at the desk.',
+    heading: '₹700, valid for 3 days',
+    text: 'The consultation is ₹700 and stays valid for 3 days. Tests and scans are quoted before they are ordered — no surprises at the desk.',
   },
   {
     title: '02 - Pay How You Prefer',
@@ -33,9 +33,9 @@ export default function Payment() {
                 <Eyebrow>Payment Options</Eyebrow>
                 <h2 className="payment_heading">Simple, transparent payment</h2>
                 <p className="payment_text">
-                  The consultation fee is ₹500. Anything beyond that — tests, scans, procedures — is
-                  quoted in advance so you can decide before you agree. Payments are accepted by UPI
-                  or cash at the clinic.
+                  The consultation fee is ₹700 and is valid for 3 days. Anything beyond that —
+                  tests, scans, procedures — is quoted in advance so you can decide before you
+                  agree. Payments are accepted by UPI or cash at the clinic.
                 </p>
               </div>
               <div className="payment_steps">

@@ -7,11 +7,16 @@ const menuColumns = [
   {
     label: 'Care',
     links: [
-      { text: 'Pregnancy Care', href: '/services/pregnancy-care' },
-      { text: 'Fertility Care', href: '/services/fertility-care' },
-      { text: 'PCOS & Hormones', href: '/services/pcos-hormones' },
-      { text: 'Screening & PAP', href: '/services/screening-pap' },
-      { text: 'Gynae Surgery', href: '/services/gynae-surgery' },
+      { text: 'Preconception Counselling', href: '/services/preconception-counselling' },
+      { text: 'Antenatal Care', href: '/services/antenatal-care' },
+      { text: 'Delivery', href: '/services/delivery' },
+      { text: 'Adolescent Health', href: '/services/adolescent-health' },
+      { text: 'Perimenopausal Problems', href: '/services/perimenopausal-problems' },
+      { text: 'Gynaecological Problems', href: '/services/gynaecological-problems' },
+      { text: 'PCOS / PMOS', href: '/services/pcos-pmos' },
+      { text: 'Gynaecological Surgeries', href: '/services/gynaecological-surgeries' },
+      { text: 'Cancer Detection', href: '/services/cancer-detection' },
+      { text: 'Family Planning Counselling', href: '/services/family-planning' },
     ],
   },
   {
@@ -20,6 +25,7 @@ const menuColumns = [
       { text: 'About', href: '/about' },
       { text: 'First Visit', href: '/first-visit' },
       { text: 'Programs', href: '/programs' },
+      { text: 'Payment', href: '/payment' },
       { text: 'Reviews', href: '/reviews' },
       { text: 'Location', href: '/location' },
     ],
@@ -126,7 +132,10 @@ export default function Navbar() {
                 <rect x="3.5" y="5.5" width="17" height="15" rx="2.4" />
                 <path d="M8 3.5v4M16 3.5v4M3.5 10.5h17" />
               </svg>
-              <span>Evening OPD Mon–Sat 6:30–8:30 pm · Walk-ins welcome</span>
+              <span>
+                Evening OPD Mon–Sat 6:30–8:30 pm
+                <span className="navbar_banner-note"> · Walk-ins welcome</span>
+              </span>
             </p>
             <Link to="/book" className="navbar_banner-link">
               Book an Appointment →

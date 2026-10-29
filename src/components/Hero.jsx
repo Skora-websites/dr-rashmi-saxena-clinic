@@ -140,7 +140,11 @@ export default function Hero() {
       <div className="padding-global">
         <div className="container-large">
           <div className="home-hero_component">
-            <h1 className="home-hero_heading">Because your health deserves the best</h1>
+            <h1 className="home-hero_heading">
+              Because your health
+              <br />
+              deserves the best
+            </h1>
             <span aria-hidden="true" className="hero_rule" />
             <div className="home-hero_content">
               <p className="home-hero_text">

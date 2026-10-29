@@ -38,7 +38,7 @@
 }
 
 .home-hero_heading {
-  max-width: 48rem;
+  max-width: min(100%, 9.8em);
   font-family: Manrope, sans-serif;
   font-size: clamp(2.6rem, 4.2vw, 4.7rem);
   font-weight: 800;
@@ -344,7 +344,12 @@
 }
 
 .navbar_component.is-light .navbar_logo-image {
-  width: clamp(210px, 13.3vw, 240px);
+  width: clamp(150px, 13.3vw, 240px);
+}
+
+.navbar_menu {
+  max-height: calc(100svh - 0.5rem);
+  overflow-y: auto;
 }
 
 .navbar_component.is-light .navbar_container {
@@ -361,32 +366,50 @@ html.menu-open .navbar_component.is-light .navbar_menu-ring {
   opacity: 0.25;
 }
 
+@media screen and (max-width: 1499px) {
+  .navbar_menu {
+    padding-top: 5.5rem;
+    grid-row-gap: 2rem;
+  }
+
+  .navbar_menu-link {
+    font-size: clamp(1.3rem, 2.2vw, 1.6rem);
+  }
+
+  .navbar_menu-list {
+    grid-row-gap: 0.5rem;
+  }
+
+  .home-hero_image {
+    background-image:
+      linear-gradient(90deg, #fffafc 0%, #fffafc 26%, rgba(255, 250, 252, 0.98) 36%, rgba(255, 250, 252, 0.94) 46%, rgba(255, 250, 252, 0.76) 54%, rgba(255, 250, 252, 0.42) 63%, rgba(255, 250, 252, 0.1) 73%, rgba(255, 250, 252, 0) 82%),
+      linear-gradient(0deg, rgba(238, 222, 247, 0.42) 0%, rgba(238, 222, 247, 0) 26%),
+      url(/assets/clinic/hero-mother-baby.jpg);
+    background-position: 0 0, 0 100%, 78% 42%;
+    background-size: auto, auto, cover;
+    background-repeat: no-repeat;
+  }
+
+  .home-hero_text {
+    max-width: min(100%, 32rem);
+  }
+
+  .hero_features {
+    width: min(100%, 35rem);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .navbar_component.is-light .navbar_contact-label {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .section_home-hero > .padding-global,
   .navbar_component.is-light .padding-global {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .home-hero_heading {
-    max-width: 34rem;
-  }
-
-  .home-hero_content {
-    max-width: 34rem;
-  }
-
-  .hero_features {
-    width: 100%;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .section_home-hero > .padding-global,
-  .navbar_component.is-light .padding-global {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 
   .section_home-hero {
@@ -395,35 +418,32 @@ html.menu-open .navbar_component.is-light .navbar_menu-ring {
 
   .home-hero_image {
     background-image:
-      linear-gradient(180deg, rgba(255, 250, 252, 0.95) 0%, rgba(255, 250, 252, 0.62) 22%, rgba(255, 250, 252, 0.9) 52%, #fffafc 72%),
-      linear-gradient(90deg, rgba(255, 250, 252, 0.9) 0%, rgba(255, 250, 252, 0.55) 55%, rgba(255, 250, 252, 0.35) 100%),
+      linear-gradient(180deg, rgba(255, 250, 252, 0.5) 0, rgba(255, 250, 252, 0.14) 130px, rgba(255, 250, 252, 0.28) 220px, rgba(255, 250, 252, 0.7) 280px, rgba(255, 250, 252, 0.95) 310px, #fffafc 340px),
+      linear-gradient(90deg, rgba(255, 250, 252, 0.5) 0%, rgba(255, 250, 252, 0.2) 55%, rgba(255, 250, 252, 0.15) 100%),
       url(/assets/clinic/hero-mother-baby.jpg);
-    background-position: 50% 0, 0 0, 66% 18%;
+    background-position: 50% 0, 0 0, 64% 12%;
     background-size: auto, auto, cover;
   }
 
   .home-hero_component {
     min-height: 0;
     justify-content: flex-start;
-    padding: 13.5rem 0 3.5rem;
-  }
-
-  .home-hero_heading {
-    max-width: 100%;
+    padding: 20rem 0 3.5rem;
   }
 
   .home-hero_content {
-    row-gap: 2rem;
     max-width: 100%;
   }
 
   .home-hero_text {
-    max-width: 100%;
+    max-width: min(100%, 38rem);
   }
 
   .hero_features {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 1.5rem;
+    width: 100%;
+    margin: 0;
   }
 
   .hero_feature + .hero_feature::before {
@@ -452,6 +472,45 @@ html.menu-open .navbar_component.is-light .navbar_menu-ring {
     background: #e3d6e6;
   }
 
+  .home-hero_heart {
+    top: 27%;
+    right: 6%;
+  }
+
+  .navbar_menu {
+    max-height: calc(100svh - 1rem);
+    overflow-y: auto;
+  }
+
+  .navbar_component.is-light .navbar_logo-image {
+    width: 165px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section_home-hero > .padding-global,
+  .navbar_component.is-light .padding-global {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .home-hero_image {
+    background-image:
+      linear-gradient(180deg, rgba(255, 250, 252, 0.55) 0, rgba(255, 250, 252, 0.2) 80px, rgba(255, 250, 252, 0.42) 150px, rgba(255, 250, 252, 0.85) 200px, #fffafc 230px),
+      linear-gradient(90deg, rgba(255, 250, 252, 0.55) 0%, rgba(255, 250, 252, 0.28) 60%, rgba(255, 250, 252, 0.28) 100%),
+      url(/assets/clinic/hero-mother-baby.jpg);
+    background-position: 50% 0, 0 0, 66% 12%;
+    background-size: auto, auto, cover;
+  }
+
+  .home-hero_component {
+    padding-top: 15rem;
+  }
+
+  .home-hero_content {
+    row-gap: 2rem;
+  }
+
   .hero_actions {
     flex-direction: column;
     align-items: stretch;
@@ -463,19 +522,31 @@ html.menu-open .navbar_component.is-light .navbar_menu-ring {
     width: 100%;
   }
 
-  .home-hero_heart {
-    top: 34%;
-    right: 4%;
-  }
-
   .home-hero_leaf {
     width: 8rem;
     opacity: 0.6;
   }
 
+  .home-hero_heart {
+    display: none;
+  }
+
   .navbar_banner-text,
   .navbar_banner-link {
     font-size: 0.85rem;
+  }
+
+  .navbar_menu {
+    grid-template-columns: minmax(0, 1fr);
+    grid-row-gap: 1.75rem;
+    max-height: calc(100svh - 0.5rem);
+    padding-top: 5.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .navbar_menu .navbar_menu-button-wrapper {
+    grid-column: 1 / -1;
+    margin-top: 0.5rem;
   }
 
   .navbar_button {
@@ -485,11 +556,19 @@ html.menu-open .navbar_component.is-light .navbar_menu-ring {
   .navbar_button-text {
     font-size: 0.85rem;
   }
+
+  .navbar_component.is-light .navbar_logo-image {
+    width: 150px;
+  }
+
+  .navbar_logo-image {
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 479px) {
   .home-hero_heading {
-    font-size: clamp(2.15rem, 10.4vw, 2.8rem);
+    font-size: clamp(2rem, 9.2vw, 2.8rem);
   }
 
   .home-hero_component {
@@ -509,5 +588,49 @@ html.menu-open .navbar_component.is-light .navbar_menu-ring {
   .hero_feature-label {
     font-size: 0.86rem;
     white-space: normal;
+  }
+
+  .navbar_banner-text {
+    align-items: flex-start;
+    column-gap: 0.35rem;
+    font-size: 0.8rem;
+  }
+
+  .navbar_banner-note {
+    display: none;
+  }
+
+  .navbar_banner-calendar {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.1rem;
+  }
+
+  .navbar_banner-link {
+    font-size: 0.8rem;
+  }
+
+  .navbar_component.is-light .navbar_logo-image {
+    width: 132px;
+  }
+
+  .navbar_logo-image {
+    width: 132px;
+  }
+
+  .navbar_menu {
+    grid-row-gap: 1.25rem;
+    padding-top: 4.5rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .navbar_menu-link {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .home-hero_heading {
+    font-size: clamp(1.8rem, 8.8vw, 2.2rem);
   }
 }

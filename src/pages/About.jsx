@@ -11,12 +11,12 @@ export default function About() {
   return (
     <>
       <Seo
-        title="About Dr Rashmi Saxena — 20+ Years in Women's Health | Gaur City 2"
+        title="About Dr Rashmi Saxena — 28 Years in Women's Health | Gaur City 2"
         description="Dr Rashmi Saxena is a senior obstetrician, gynaecologist and fertility specialist in Gaur City 2, Greater Noida. MBBS (University of Delhi), MD (Lady Hardinge Medical College), AOGD & FOGSI member."
       />
       <PageHero
         eyebrow="About Dr Rashmi Saxena"
-        title="Two decades of women's health care"
+        title="28 years of women's health care"
         text="Senior obstetrician, gynaecologist and fertility specialist — combining clinical experience with calm, unhurried care for women at every stage of life."
       >
         <Link to="/book" className="home-hero_button w-inline-block">
@@ -48,10 +48,10 @@ export default function About() {
                     Senior Obstetrician, Gynaecologist &amp; Fertility Specialist
                   </h2>
                   <p className="about_text">
-                    Dr Rashmi Saxena combines two decades of clinical mastery with compassionate,
-                    unhurried care. From pregnancy and delivery to fertility, PCOS and
-                    gynaecological surgery, every patient receives personalised attention tailored
-                    to her needs.
+                    Dr Rashmi Saxena combines more than two decades of clinical experience with
+                    compassionate, unhurried care. From pregnancy and delivery to fertility, PCOS
+                    and gynaecological surgery, every patient receives personalised attention
+                    tailored to her needs.
                   </p>
                   <p className="about_text">
                     She completed her MBBS from the University of Delhi and her MD in Obstetrics

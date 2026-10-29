@@ -2,12 +2,16 @@ import { Link } from 'react-router-dom'
 import { clinic } from '../data/content'
 
 const careLinks = [
-  ['Pregnancy Care', '/services/pregnancy-care'],
-  ['High-Risk Pregnancy', '/services/high-risk-pregnancy'],
-  ['Fertility Care', '/services/fertility-care'],
-  ['PCOS & Hormones', '/services/pcos-hormones'],
-  ['Screening & PAP', '/services/screening-pap'],
-  ['Gynae Surgery', '/services/gynae-surgery'],
+  ['Preconception Counselling', '/services/preconception-counselling'],
+  ['Antenatal Care', '/services/antenatal-care'],
+  ['Delivery', '/services/delivery'],
+  ['Adolescent Health', '/services/adolescent-health'],
+  ['Perimenopausal Problems', '/services/perimenopausal-problems'],
+  ['Gynaecological Problems', '/services/gynaecological-problems'],
+  ['PCOS / PMOS', '/services/pcos-pmos'],
+  ['Gynaecological Surgeries', '/services/gynaecological-surgeries'],
+  ['Cancer Detection', '/services/cancer-detection'],
+  ['Family Planning Counselling', '/services/family-planning'],
 ]
 
 const clinicLinks = [

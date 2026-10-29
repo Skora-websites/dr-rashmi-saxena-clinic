@@ -9,7 +9,7 @@ export default function Why() {
           <div className="padding-section-large">
             <div className="why_component">
               <div className="why_header">
-                <Eyebrow dark>Why Dr Rashmi</Eyebrow>
+                <Eyebrow dark>Why Dr. Rashmi Saxena</Eyebrow>
                 <h2 className="why_heading heading-style-h2" data-split>
                   Care you can trust
                 </h2>
