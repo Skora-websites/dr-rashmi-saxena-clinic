@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 import Eyebrow from './Eyebrow'
 
 const tags = [
-  'MBBS, University of Delhi',
+  'MBBS, Maulana Azad Medical College, Delhi',
   'MD, Obstetrics & Gynaecology',
   'AOGD & FOGSI Member',
-  'Visiting Consultant, Noida',
+  'Sarvodaya & LYF Hospital',
 ]
 
 export default function Provider() {
@@ -22,10 +22,11 @@ export default function Provider() {
               surgery for more than twenty years.
             </p>
             <p className="provider_bio-text">
-              She completed her MBBS at the University of Delhi and her MD in Obstetrics &amp;
-              Gynaecology at Lady Hardinge Medical College, New Delhi. Her approach is simple:
-              understand the whole picture first, treat only what is needed, and stay with you
-              through every stage of care.
+              She completed her MBBS at Maulana Azad Medical College, Delhi, and her MD in
+              Obstetrics &amp; Gynaecology at Lady Hardinge Medical College, New Delhi. She also
+              trained in assisted reproductive techniques (infertility) at the Institute of
+              Reproductive Medicine, Kolkata. Her approach is simple: understand the whole picture
+              first, treat only what is needed, and stay with you through every stage of care.
             </p>
           </div>
           <div className="provider_tags">

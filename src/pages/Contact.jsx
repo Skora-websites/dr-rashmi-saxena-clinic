@@ -95,9 +95,9 @@ export default function Contact() {
                     <div className="contact_block">
                       <p className="contact_block-label">Hospital Partners</p>
                       <p className="contact_block-text">
-                        <span>Cloud 9 Hospital, Noida</span>
-                        <span>Yatharth Hospital, Noida</span>
-                        <span>Motherland Hospital, Noida</span>
+                        <span>Sarvodaya Hospital, Noida</span>
+                        <span>LYF Hospital, Noida</span>
+                        <span>Other hospitals with economical packages</span>
                       </p>
                     </div>
                   </div>

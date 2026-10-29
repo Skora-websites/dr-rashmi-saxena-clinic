@@ -64,12 +64,12 @@ export const services = [
     tags: ['Antenatal', 'High-Risk', 'Nutrition'],
     text: 'Trimester-by-trimester care for normal and high-risk pregnancies, recognised early.',
     intro:
-      'Complete antenatal care for normal and high-risk pregnancy — regular check-ups, nutrition and supplement guidance, and close monitoring through every trimester.',
+      'Complete antenatal care for normal and high-risk pregnancy — trimester-wise counselling on tests, ultrasound scans, nutrition and follow-ups, with calm and well-supported care throughout.',
     includes: [
-      'Trimester-by-trimester antenatal check-ups',
+      'Trimester-wise counselling on tests and USG scans',
+      'Trimester-by-trimester antenatal check-ups and follow-ups',
       'High risk pregnancy is recognised at the earliest & managed',
       'Nutrition, iron and supplement guidance',
-      'Postnatal review and breastfeeding support',
     ],
     price: '700',
     unit: 'visit',
@@ -83,7 +83,7 @@ export const services = [
     tags: ['Normal', 'Painless', 'Caesarean'],
     text: 'Delivery planning with painless normal delivery and caesarean section when needed.',
     intro:
-      'Delivery care at partner hospitals across Noida — normal delivery, painless normal delivery with epidural support, and caesarean section when it is medically indicated.',
+      'Delivery care at Sarvodaya Hospital and LYF Hospital, plus other Noida hospitals with economical packages — normal delivery, painless normal delivery with epidural support, and caesarean section when it is medically indicated.',
     includes: [
       'Normal delivery with labour support',
       'Painless normal delivery with epidural analgesia',
@@ -176,9 +176,9 @@ export const services = [
     title: 'Gynaecological Surgeries',
     fullTitle: 'Gynaecological Surgeries',
     tags: ['Laparoscopy', 'Hysteroscopy', 'Fibroids'],
-    text: 'Minimally invasive and open gynae surgery with senior hospital partners.',
+    text: 'Minimally invasive and open gynae surgery at Sarvodaya and LYF Hospital.',
     intro:
-      'Hysterectomy, myomectomy, ovarian cystectomy and laparoscopic procedures performed with senior hospital partners across Noida, with clear pre- and post-operative care.',
+      'Hysterectomy, myomectomy, ovarian cystectomy and laparoscopic procedures performed at Sarvodaya Hospital and LYF Hospital, plus other Noida hospitals with economical packages — with clear pre- and post-operative care.',
     includes: [
       'Hysterectomy and myomectomy',
       'Ovarian cystectomy',
@@ -267,8 +267,7 @@ export const credentials = [
   'MD (Obstetrics & Gynaecology) — Lady Hardinge Medical College',
   'Training in Assisted Reproductive Techniques (Infertility) — Institute of Reproductive Medicine, Kolkata',
   'Member — AOGD & FOGSI',
-  'Visiting Consultant — Cloud 9, Yatharth, Motherland Hospitals',
-  'Associated with Sarvodaya & LYF Hospital, with economical packages',
+  'Associated with Sarvodaya & LYF Hospital, and other hospitals with economical packages',
 ]
 
 export const visitSteps = [
@@ -469,7 +468,7 @@ export const faqs = [
   {
     question: 'Where does Dr Rashmi Saxena deliver babies and perform surgeries?',
     answer:
-      'Deliveries — including normal and painless normal delivery — and surgeries are performed at premier multispeciality hospitals in Noida where she is a senior visiting consultant: Cloud 9 Hospital, Yatharth Hospital and Motherland Hospital.',
+      'Deliveries — including normal and painless normal delivery — and surgeries are performed at Sarvodaya Hospital and LYF Hospital, along with other hospitals in Noida that offer economical packages.',
   },
   {
     question: 'What is the consultation fee and which payment methods are accepted?',

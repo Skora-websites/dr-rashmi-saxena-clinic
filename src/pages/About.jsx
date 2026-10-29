@@ -112,9 +112,9 @@ export default function About() {
                     and assisted reproductive technologies.
                   </p>
                   <p className="about_text">
-                    As a visiting consultant at premier multispeciality hospitals in Noida — Cloud
-                    9, Yatharth and Motherland Hospital — she performs deliveries and advanced
-                    gynaecological surgeries with the highest standards of safety and care.
+                    Deliveries and advanced gynaecological surgeries are performed at Sarvodaya
+                    Hospital and LYF Hospital, and at other Noida hospitals that offer economical
+                    packages — with the highest standards of safety and care.
                   </p>
                   <ul className="about_credentials">
                     {credentials.map((item) => (
