@@ -1,0 +1,190 @@
+/* ---------- Why / Care you can trust ---------- */
+.section_why {
+  background-color: var(--brand-blush);
+  background-image: none;
+}
+
+.why_component {
+  display: flex;
+  align-items: stretch;
+  column-gap: clamp(2rem, 5vw, 5rem);
+}
+
+.why_header {
+  display: flex;
+  flex: 0 0 40%;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  max-width: 40%;
+  padding-top: 0.35rem;
+}
+
+.why_header .eyebrow_component {
+  margin-bottom: clamp(1.25rem, 2.2vw, 2.1rem);
+}
+
+.why_heading {
+  color: var(--brand-blue-deep);
+  font-size: clamp(2.6rem, 5.1vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.why_header-line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: clamp(1.75rem, 3.4vw, 3.6rem);
+  background-color: var(--brand-line);
+}
+
+.why_header-text {
+  margin: clamp(1.1rem, 2.1vw, 1.6rem) 0 0;
+  max-width: 32rem;
+  color: var(--brand-slate-soft);
+  font-size: clamp(0.95rem, 1.05vw, 1.075rem);
+  line-height: 1.66;
+}
+
+.why_grid {
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  min-width: 0;
+  border-top: 1px solid var(--brand-line);
+  border-left: 1px solid var(--brand-line);
+}
+
+.why_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: clamp(2rem, 4vw, 4.25rem);
+  min-height: clamp(15rem, 17vw, 18.5rem);
+  min-width: 0;
+  padding: clamp(1.4rem, 2.1vw, 2.1rem);
+  border-right: 1px solid var(--brand-line);
+  border-bottom: 1px solid var(--brand-line);
+}
+
+.why_card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(0.9rem, 1.4vw, 1.35rem);
+}
+
+.why_icon {
+  display: block;
+  width: clamp(2rem, 2vw, 2.35rem);
+  height: clamp(2rem, 2vw, 2.35rem);
+}
+
+.why_card-title {
+  margin: 0;
+  color: var(--brand-blue-deep);
+  font-family: var(--typography-heading, Manrope, sans-serif);
+  font-size: clamp(1.3rem, 1.42vw, 1.6rem);
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: -0.018em;
+}
+
+.why_card-text {
+  margin: 0;
+  max-width: 21rem;
+  color: var(--brand-slate-soft);
+  font-size: clamp(0.9rem, 0.92vw, 0.975rem);
+  line-height: 1.62;
+}
+
+@media (max-width: 1199px) {
+  .why_component {
+    column-gap: 2.5rem;
+  }
+
+  .why_header {
+    flex-basis: 40%;
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 991px) {
+  .why_component {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 2.75rem;
+  }
+
+  .why_header {
+    flex: none;
+    max-width: 34rem;
+    padding-top: 0;
+  }
+
+  .why_header-line {
+    margin-top: 1.75rem;
+  }
+
+  .why_card {
+    min-height: 0;
+    gap: 1.75rem;
+  }
+
+  .why_card-text {
+    max-width: 26rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .why_heading {
+    font-size: clamp(2.4rem, 8vw, 3.4rem);
+  }
+
+  .why_grid {
+    border-left: 0;
+  }
+
+  .why_card {
+    padding: 1.35rem;
+    border-right: 0;
+  }
+
+  .why_card-title {
+    font-size: 1.2rem;
+  }
+
+  .why_card-text {
+    font-size: 0.925rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .why_grid {
+    grid-template-columns: minmax(0, 1fr);
+    border-top: 0;
+  }
+
+  .why_card {
+    padding: 1.25rem 0;
+    border-right: 0;
+    border-left: 0;
+    gap: 1.25rem;
+  }
+
+  .why_card:last-child {
+    border-bottom: 0;
+  }
+
+  .why_heading {
+    font-size: clamp(2.1rem, 9.4vw, 2.9rem);
+  }
+
+  .why_header-text {
+    font-size: 0.95rem;
+  }
+}

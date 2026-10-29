@@ -13,6 +13,12 @@ export default function Why() {
                 <h2 className="why_heading heading-style-h2" data-split>
                   Care you can trust
                 </h2>
+                <span aria-hidden="true" className="why_header-line" />
+                <p className="why_header-text">
+                  Every visit is unhurried and personal. You get clear answers, a plan you
+                  understand, and continuity of care from your first consultation through
+                  delivery and beyond.
+                </p>
               </div>
               <div className="why_grid" data-reveal-group>
                 {reasons.map((reason, index) => (
@@ -37,12 +43,6 @@ export default function Why() {
                     <p className="why_card-text">{reason.text}</p>
                   </div>
                 ))}
-                <div aria-hidden="true" className="why_line is-vertical" />
-                <div aria-hidden="true" className="why_line is-horizontal" />
-                <div aria-hidden="true" className="why_plus">
-                  <div className="why_plus-bar" />
-                  <div className="why_plus-bar is-turned" />
-                </div>
               </div>
             </div>
           </div>
