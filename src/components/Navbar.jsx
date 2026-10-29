@@ -114,7 +114,7 @@ export default function Navbar() {
   }
 
   return (
-    <div data-navbar="" className={`navbar_component${isLight ? ' is-light' : ''}`}>
+    <div data-navbar="" className={`navbar_component is-light${isLight ? ' is-home' : ''}`}>
       {banner && (
         <div data-banner="" className="navbar_banner" ref={bannerRef}>
           <div className="navbar_banner-content">
@@ -192,7 +192,7 @@ export default function Navbar() {
 
               <Link to="/" aria-label="Dr Rashmi Saxena's Women's Clinic — home" className="navbar_logo-link w-inline-block">
                 <img
-                  src={isLight ? '/assets/clinic/logo.png' : '/assets/clinic/logo-white.png'}
+                  src="/assets/clinic/logo.png"
                   width="1024"
                   height="341"
                   alt="Dr. Rashmi Saxena's Women's Clinic"

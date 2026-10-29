@@ -40,7 +40,7 @@ export default function Footer() {
             <div className="footer_top">
               <Link to="/" aria-label="Dr Rashmi Saxena's Women's Clinic — home" className="footer_logo-link w-inline-block">
                 <img
-                  src="/assets/clinic/logo-white.png"
+                  src="/assets/clinic/logo.png"
                   width="1024"
                   height="341"
                   alt="Dr. Rashmi Saxena's Women's Clinic"

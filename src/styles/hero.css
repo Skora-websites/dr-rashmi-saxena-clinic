@@ -16,13 +16,13 @@
 }
 
 .section_home-hero > .padding-global,
-.navbar_component.is-light .padding-global {
+.navbar_component.is-home .padding-global {
   padding-left: clamp(4rem, 6.7vw, 7.5rem);
   padding-right: clamp(4rem, 6.7vw, 7.5rem);
 }
 
 .section_home-hero .container-large,
-.navbar_component.is-light .container-large {
+.navbar_component.is-home .container-large {
   max-width: none;
 }
 
@@ -44,7 +44,7 @@
   font-weight: 800;
   line-height: 1.04;
   letter-spacing: -0.006em;
-  background-image: linear-gradient(118deg, #37278c 0%, #7c2fa1 46%, #2447b2 82%, #1b46b6 100%);
+  background-image: linear-gradient(118deg, #3b1f61 0%, #7c2fa1 46%, #b03a8d 82%, #c044a0 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -163,16 +163,16 @@
 }
 
 .hero_button.is-outline {
-  color: #2c2c93;
+  color: #4b2580;
   background-image: none;
   background-color: #fffafc;
-  box-shadow: inset 0 0 0 1.5px #2c2c93;
+  box-shadow: inset 0 0 0 1.5px #4b2580;
 }
 
 .hero_button.is-outline:hover {
   color: #fff9fc;
-  background-color: #2c2c93;
-  box-shadow: inset 0 0 0 1.5px #2c2c93;
+  background-color: #4b2580;
+  box-shadow: inset 0 0 0 1.5px #4b2580;
 }
 
 .hero_icon {
@@ -226,7 +226,7 @@
 
 /* ---------- navbar: light variant + mockup treatment ---------- */
 .navbar_banner {
-  background-color: #2455b9;
+  background-color: #5b2e8f;
   padding-top: clamp(0.75rem, 0.83vw, 0.88rem);
   padding-bottom: clamp(0.75rem, 0.83vw, 0.88rem);
 }
@@ -324,26 +324,38 @@
 
 .navbar_component.is-light .navbar_menu-button,
 .navbar_component.is-light .navbar_contact {
-  color: #3a2c8f;
+  color: #4b2580;
 }
 
 .navbar_component.is-light .navbar_contact-label {
-  color: rgba(58, 44, 143, 0.75);
+  color: rgba(75, 37, 128, 0.75);
 }
 
 .navbar_component.is-light .navbar_menu-ring {
-  border-color: #3a2c8f;
+  border-color: #4b2580;
   opacity: 0.3;
 }
 
-.navbar_component.is-light .navbar_bar {
-  background-color: rgba(255, 250, 252, 0.9);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  box-shadow: none;
+.navbar_component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 60;
 }
 
-.navbar_component.is-light .navbar_logo-image {
+html {
+  scroll-padding-top: 7rem;
+}
+
+.navbar_component.is-light .navbar_bar {
+  background-color: rgba(253, 247, 251, 0.86);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 1px 0 rgba(99, 59, 145, 0.1), 0 10px 30px -24px rgba(59, 31, 97, 0.5);
+}
+
+.navbar_component.is-home .navbar_logo-image {
   width: clamp(150px, 13.3vw, 240px);
 }
 
@@ -407,7 +419,7 @@ html.menu-open .navbar_component.is-light .navbar_menu-ring {
 
 @media screen and (max-width: 991px) {
   .section_home-hero > .padding-global,
-  .navbar_component.is-light .padding-global {
+  .navbar_component.is-home .padding-global {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
@@ -482,14 +494,14 @@ html.menu-open .navbar_component.is-light .navbar_menu-ring {
     overflow-y: auto;
   }
 
-  .navbar_component.is-light .navbar_logo-image {
+  .navbar_component.is-home .navbar_logo-image {
     width: 165px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .section_home-hero > .padding-global,
-  .navbar_component.is-light .padding-global {
+  .navbar_component.is-home .padding-global {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -557,7 +569,7 @@ html.menu-open .navbar_component.is-light .navbar_menu-ring {
     font-size: 0.85rem;
   }
 
-  .navbar_component.is-light .navbar_logo-image {
+  .navbar_component.is-home .navbar_logo-image {
     width: 150px;
   }
 
@@ -610,7 +622,7 @@ html.menu-open .navbar_component.is-light .navbar_menu-ring {
     font-size: 0.8rem;
   }
 
-  .navbar_component.is-light .navbar_logo-image {
+  .navbar_component.is-home .navbar_logo-image {
     width: 132px;
   }
 

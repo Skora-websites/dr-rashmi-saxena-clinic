@@ -1,7 +1,39 @@
 /* ---------- Why / Care you can trust ---------- */
 .section_why {
-  background-color: var(--brand-blush);
-  background-image: none;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #f4e8fa;
+  background-image:
+    radial-gradient(58% 68% at 10% 0%, rgba(192, 68, 160, 0.18), transparent 62%),
+    radial-gradient(52% 66% at 92% 96%, rgba(99, 59, 145, 0.2), transparent 66%),
+    radial-gradient(40% 50% at 62% 42%, rgba(255, 255, 255, 0.55), transparent 70%),
+    linear-gradient(158deg, #fdf6fb 0%, #f7ecfa 46%, #efe0f6 100%);
+}
+
+.section_why::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--grain);
+  opacity: 0.34;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.section_why::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -18%;
+  right: -12%;
+  width: 46rem;
+  height: 46rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(192, 68, 160, 0.16), transparent 68%);
+  filter: blur(10px);
+  pointer-events: none;
 }
 
 .why_component {
