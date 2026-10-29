@@ -1,18 +1,17 @@
 :root {
-  --brand-blue: #5b2e8f;
-  --brand-blue-deep: #3b1f61;
+  --brand-blue: #174a9c;
+  --brand-blue-deep: #123c80;
   --brand-purple: #633b91;
   --brand-magenta: #c044a0;
-  --brand-plum: #2f1148;
-  --brand-lavender: #f6effb;
-  --brand-blush: #fdf7fb;
-  --brand-slate: #322341;
-  --brand-slate-soft: #6c5d7b;
+  --brand-lavender: #f7f3fc;
+  --brand-blush: #fff9fc;
+  --brand-slate: #283044;
+  --brand-slate-soft: #6a7089;
   --brand-line: #633b9126;
 
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
-  --gradient-dark: linear-gradient(135deg, #2b0f45 0%, #5e2a80 50%, #a42a86 100%);
-  --gradient-dark-soft: linear-gradient(150deg, #37165a 0%, #6a2f8c 52%, #b03a8d 100%);
+  --gradient-dark: linear-gradient(135deg, #112a5c 0%, #174a9c 52%, #4a3488 100%);
+  --gradient-dark-soft: linear-gradient(150deg, #143d86 0%, #174a9c 50%, #4a3488 100%);
 
   --_colors---brand--green: var(--brand-slate);
   --_colors---brand--cream: var(--brand-blush);
@@ -41,11 +40,10 @@ body {
 .section_home-results,
 .section_memberships,
 .section_booking {
-  background-color: #faf1f9;
+  background-color: var(--brand-blush);
   background-image:
-    radial-gradient(58% 62% at 6% 0%, rgba(192, 68, 160, 0.12), transparent 62%),
-    radial-gradient(52% 58% at 96% 100%, rgba(99, 59, 145, 0.14), transparent 64%),
-    linear-gradient(160deg, #fdf7fc 0%, #f8eefa 52%, #f2e6f8 100%);
+    radial-gradient(60% 55% at 8% 0%, rgba(192, 68, 160, 0.055), transparent 60%),
+    radial-gradient(50% 55% at 96% 100%, rgba(23, 74, 156, 0.055), transparent 60%);
 }
 
 /* ---------- dark surfaces -> primary blue ---------- */
@@ -69,7 +67,7 @@ body {
 .treat-slider_intro {
   background-color: var(--brand-blue);
   background-image: linear-gradient(rgba(9, 20, 44, 0.34), rgba(9, 20, 44, 0.34)),
-    linear-gradient(160deg, #5b2e8f 0%, #7a339b 55%, #b03a8d 100%);
+    linear-gradient(160deg, #174a9c 0%, #2b3c8e 55%, #633b91 100%);
 }
 
 .footer_component {
@@ -82,7 +80,7 @@ body {
 }
 
 .section_reviews {
-  background-color: #4a2172;
+  background-color: #174a9c;
   background-image:
     radial-gradient(55% 80% at 12% 0%, rgba(192, 68, 160, 0.3), transparent 60%),
     radial-gradient(50% 75% at 92% 100%, rgba(99, 59, 145, 0.55), transparent 65%),
@@ -358,7 +356,7 @@ html.menu-open .navbar_logo-link {
 
 /* ---------- compare slider ---------- */
 .home-results_component {
-  background-color: #4a2172;
+  background-color: #174a9c;
   background-image:
     radial-gradient(50% 70% at 18% 12%, rgba(192, 68, 160, 0.55), transparent 66%),
     radial-gradient(48% 65% at 84% 86%, rgba(99, 59, 145, 0.7), transparent 68%),
@@ -470,19 +468,19 @@ html.menu-open .navbar_logo-link {
 }
 
 .section_payment {
-  background-image: linear-gradient(135deg, rgba(91, 46, 143, 0.82), rgba(176, 58, 141, 0.55)),
+  background-image: linear-gradient(135deg, rgba(23, 74, 156, 0.82), rgba(99, 59, 145, 0.55)),
     url(/assets/clinic/consulting-room.jpg);
   background-position: 50%, 50% 58%;
   background-size: cover, cover;
 }
 
 .payment_blur {
-  background-color: #5b2e8f3d;
+  background-color: #174a9c3d;
 }
 
 .section_newsletter {
-  background-color: #4a2172;
-  background-image: linear-gradient(#2b11407a 20%, #3b1f61cc 100%),
+  background-color: #174a9c;
+  background-image: linear-gradient(#1a23387a 20%, #283044cc 100%),
     url(/assets/clinic/reception.jpg);
   background-position: 50%, 50% 42%;
   background-repeat: no-repeat, no-repeat;
@@ -528,7 +526,7 @@ html.menu-open .navbar_logo-link {
   overflow: hidden;
   padding: 11rem 0 6rem;
   color: #fff9fc;
-  background-color: #3b1f61;
+  background-color: #13224a;
   background-image:
     radial-gradient(58% 82% at 10% 18%, rgba(192, 68, 160, 0.38), transparent 62%),
     radial-gradient(52% 72% at 90% 92%, rgba(99, 59, 145, 0.6), transparent 66%),
@@ -593,7 +591,7 @@ html.menu-open .navbar_logo-link {
   background-color: var(--brand-lavender);
   background-image:
     radial-gradient(55% 90% at 8% 10%, rgba(192, 68, 160, 0.12), transparent 62%),
-    radial-gradient(50% 85% at 94% 90%, rgba(99, 59, 145, 0.12), transparent 62%),
+    radial-gradient(50% 85% at 94% 90%, rgba(23, 74, 156, 0.1), transparent 62%),
     linear-gradient(120deg, #f7f3fc 0%, #fff9fc 55%, #f7f3fc 100%);
   border-top: 1px solid rgba(99, 59, 145, 0.14);
 }
@@ -693,7 +691,7 @@ html.menu-open .navbar_logo-link {
   background-color: var(--brand-blush);
   background-image:
     radial-gradient(55% 70% at 92% 8%, rgba(192, 68, 160, 0.07), transparent 62%),
-    radial-gradient(45% 60% at 4% 96%, rgba(99, 59, 145, 0.09), transparent 60%);
+    radial-gradient(45% 60% at 4% 96%, rgba(23, 74, 156, 0.055), transparent 60%);
 }
 
 .faq_component {
@@ -897,7 +895,7 @@ html.menu-open .navbar_logo-link {
   margin-top: 1rem;
   padding: 1.5rem 1.75rem;
   background-color: rgba(255, 255, 255, 0.66);
-  border: 1px solid rgba(99, 59, 145, 0.12);
+  border: 1px solid rgba(23, 74, 156, 0.1);
   border-radius: 12px;
 }
 
@@ -939,7 +937,7 @@ html.menu-open .navbar_logo-link {
   background-color: var(--brand-lavender);
   background-image:
     radial-gradient(55% 65% at 92% 4%, rgba(192, 68, 160, 0.08), transparent 62%),
-    radial-gradient(45% 55% at 4% 98%, rgba(99, 59, 145, 0.09), transparent 60%);
+    radial-gradient(45% 55% at 4% 98%, rgba(23, 74, 156, 0.055), transparent 60%);
 }
 
 .service-index_header {
@@ -968,7 +966,7 @@ html.menu-open .navbar_logo-link {
   flex-direction: column;
   overflow: hidden;
   background-color: #fff;
-  border: 1px solid rgba(99, 59, 145, 0.12);
+  border: 1px solid rgba(23, 74, 156, 0.1);
   border-radius: 12px;
   transition: transform 0.4s cubic-bezier(0.625, 0.05, 0, 1), box-shadow 0.4s ease;
 }
@@ -1028,7 +1026,7 @@ html.menu-open .navbar_logo-link {
 .service-card_tag {
   padding: 0.28rem 0.6rem;
   border-radius: 999px;
-  background-color: rgba(99, 59, 145, 0.08);
+  background-color: rgba(23, 74, 156, 0.05);
   color: var(--brand-purple);
   font-size: 0.68rem;
   letter-spacing: 0.08em;
@@ -1059,7 +1057,7 @@ html.menu-open .navbar_logo-link {
   isolation: isolate;
   overflow: hidden;
   color: #fff9fc;
-  background-color: #4a2172;
+  background-color: #174a9c;
   background-image:
     radial-gradient(55% 75% at 8% 0%, rgba(192, 68, 160, 0.32), transparent 60%),
     radial-gradient(50% 70% at 94% 100%, rgba(99, 59, 145, 0.58), transparent 65%),
@@ -1333,7 +1331,7 @@ html.menu-open .navbar_logo-link {
   background-color: var(--brand-blush);
   background-image:
     radial-gradient(60% 55% at 8% 0%, rgba(192, 68, 160, 0.05), transparent 60%),
-    radial-gradient(50% 55% at 96% 100%, rgba(99, 59, 145, 0.08), transparent 60%);
+    radial-gradient(50% 55% at 96% 100%, rgba(23, 74, 156, 0.05), transparent 60%);
 }
 
 .service-related_header {
@@ -1360,7 +1358,7 @@ html.menu-open .navbar_logo-link {
   flex-direction: column;
   padding: 1.5rem;
   background-color: var(--brand-lavender);
-  border: 1px solid rgba(99, 59, 145, 0.12);
+  border: 1px solid rgba(23, 74, 156, 0.1);
   border-radius: 10px;
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
@@ -1401,7 +1399,7 @@ html.menu-open .navbar_logo-link {
   background-color: var(--brand-lavender);
   background-image:
     radial-gradient(55% 65% at 92% 4%, rgba(192, 68, 160, 0.08), transparent 62%),
-    radial-gradient(45% 55% at 4% 98%, rgba(99, 59, 145, 0.09), transparent 60%);
+    radial-gradient(45% 55% at 4% 98%, rgba(23, 74, 156, 0.055), transparent 60%);
 }
 
 .review-cards_header {
@@ -1431,7 +1429,7 @@ html.menu-open .navbar_logo-link {
   margin: 0;
   padding: 1.75rem;
   background-color: #fff;
-  border: 1px solid rgba(99, 59, 145, 0.12);
+  border: 1px solid rgba(23, 74, 156, 0.1);
   border-radius: 12px;
 }
 
@@ -1474,7 +1472,7 @@ html.menu-open .navbar_logo-link {
   justify-content: center;
   color: #fff9fc;
   border: 0;
-  background-color: #4a2172;
+  background-color: #174a9c;
   background-image:
     radial-gradient(60% 80% at 8% 0%, rgba(192, 68, 160, 0.35), transparent 62%),
     radial-gradient(55% 80% at 92% 100%, rgba(99, 59, 145, 0.6), transparent 66%),
@@ -1515,7 +1513,7 @@ html.menu-open .navbar_logo-link {
   background-color: var(--brand-blush);
   background-image:
     radial-gradient(60% 55% at 8% 0%, rgba(192, 68, 160, 0.05), transparent 60%),
-    radial-gradient(50% 55% at 96% 100%, rgba(99, 59, 145, 0.08), transparent 60%);
+    radial-gradient(50% 55% at 96% 100%, rgba(23, 74, 156, 0.05), transparent 60%);
 }
 
 .map_component {
@@ -1543,7 +1541,7 @@ html.menu-open .navbar_logo-link {
 .map_details {
   padding: 2rem;
   background-color: #fff;
-  border: 1px solid rgba(99, 59, 145, 0.12);
+  border: 1px solid rgba(23, 74, 156, 0.1);
   border-radius: 12px;
 }
 
@@ -1599,7 +1597,7 @@ html.menu-open .navbar_logo-link {
 .map_note {
   margin-top: 1.75rem;
   padding-top: 1.35rem;
-  border-top: 1px solid rgba(99, 59, 145, 0.12);
+  border-top: 1px solid rgba(23, 74, 156, 0.1);
 }
 
 .map_note-label {
