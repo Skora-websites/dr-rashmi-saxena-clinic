@@ -140,11 +140,19 @@ export default function Hero() {
       <div className="padding-global">
         <div className="container-large">
           <div className="home-hero_component">
-            <h1 className="home-hero_heading">
-              Because your health
-              <br />
-              deserves the best
-            </h1>
+            <div aria-hidden="true" className="home-hero_mobile-media">
+              <img
+                src="/assets/clinic/hero-mother-baby.jpg"
+                width="1680"
+                height="950"
+                alt=""
+                loading="eager"
+                fetchPriority="high"
+              />
+            </div>
+            <p className="home-hero_eyebrow">Obstetrician · Gynaecologist · IVF Specialist</p>
+            <h1 className="home-hero_name">Dr. Rashmi Saxena</h1>
+            <h2 className="home-hero_heading">Because your health deserves the best</h2>
             <span aria-hidden="true" className="hero_rule" />
             <div className="home-hero_content">
               <p className="home-hero_text">

@@ -2,7 +2,10 @@ import { useState } from 'react'
 import Eyebrow from './Eyebrow'
 import { clinic, services } from '../data/content'
 
-const interests = [...services.map((service) => service.title), 'General Consultation']
+const interests = [
+  ...services.map((service) => service.title),
+  'General Consultation',
+]
 
 const times = ['6:30 PM', '7:00 PM', '7:30 PM', '8:00 PM', '11:30 AM', '12:00 PM', '12:30 PM', '1:00 PM']
 
@@ -48,11 +51,11 @@ export default function Booking() {
               <div className="booking_layout">
                 <div className="booking_aside">
                   <img
-                    src="/assets/clinic/consultation.jpg"
+                    src="/assets/clinic/storefront.jpg"
                     loading="lazy"
                     width="424"
                     height="297"
-                    alt="A consultation in progress at Dr Rashmi Saxena's clinic"
+                    alt="The clinic storefront at 14th Avenue High Street Market, Gaur City 2"
                     className="booking_image"
                   />
                   <div className="booking_faq">
@@ -139,13 +142,13 @@ export default function Booking() {
                                   <div className="w-form-formradioinput w-form-formradioinput--inputType-custom form_radio-input is-large w-radio-input" />
                                   <input
                                     type="radio"
-                                    id="booking-patient-returning"
+                                    id="booking-patient-follow-up"
                                     name="patient-type"
-                                    aria-label="Returning patient"
+                                    aria-label="Follow-up patient"
                                     style={{ opacity: 0, position: 'absolute', zIndex: -1 }}
-                                    value="Returning"
+                                    value="Follow-up"
                                   />
-                                  <span className="form_radio-label w-form-label">Returning</span>
+                                  <span className="form_radio-label w-form-label">Follow-up</span>
                                 </label>
                               </div>
                             </div>

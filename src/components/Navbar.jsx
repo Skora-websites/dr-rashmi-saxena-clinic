@@ -8,13 +8,15 @@ const menuColumns = [
     label: 'Care',
     links: [
       { text: 'Preconception Counselling', href: '/services/preconception-counselling' },
-      { text: 'Antenatal Care', href: '/services/antenatal-care' },
+      { text: 'Antenatal & Gynaecological Care', href: '/services/antenatal-care' },
       { text: 'Delivery', href: '/services/delivery' },
       { text: 'Adolescent Health', href: '/services/adolescent-health' },
       { text: 'Perimenopausal Problems', href: '/services/perimenopausal-problems' },
       { text: 'Gynaecological Problems', href: '/services/gynaecological-problems' },
       { text: 'PCOS / PMOS', href: '/services/pcos-pmos' },
       { text: 'Gynaecological Surgeries', href: '/services/gynaecological-surgeries' },
+      { text: 'Vaginal Surgeries', href: '/services/vaginal-surgeries' },
+      { text: 'Vaccination During Pregnancy', href: '/services/vaccination-during-pregnancy' },
       { text: 'Cancer Detection', href: '/services/cancer-detection' },
       { text: 'Family Planning Counselling', href: '/services/family-planning' },
     ],
@@ -97,6 +99,7 @@ export default function Navbar() {
   const closeMenu = () => setOpen(false)
 
   const dismissBanner = () => {
+    document.documentElement.classList.add('banner-closed')
     const el = bannerRef.current
     if (!el) {
       setBanner(false)

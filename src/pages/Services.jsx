@@ -10,7 +10,7 @@ export default function Services() {
     <>
       <Seo
         title="Women's Health Services in Gaur City 2 — Dr Rashmi Saxena"
-        description="Preconception counselling, antenatal care, delivery, adolescent health, perimenopausal care, PCOS/PMOS, gynaecological surgery, cancer detection and family planning in Gaur City 2, Greater Noida."
+        description="Preconception counselling, Antenatal & Gynaecological Care, delivery, adolescent health, perimenopausal care, PCOS/PMOS, gynaecological surgery, cancer detection and family planning in Gaur City 2, Greater Noida."
       />
       <PageHero
         eyebrow="Our Services"

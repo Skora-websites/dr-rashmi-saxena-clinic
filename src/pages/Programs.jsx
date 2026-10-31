@@ -9,7 +9,7 @@ export default function Programs() {
     <>
       <Seo
         title="Care Programs — Dr Rashmi Saxena's Women's Clinic"
-        description="Care programs for general consultations, fertility support and antenatal care. Transparent fees, in-clinic tests and follow-up guidance."
+        description="Care programs for general consultations, IVF support and Antenatal & Gynaecological Care. Transparent fees, in-clinic tests and follow-up guidance."
       />
       <PageHero
         eyebrow="Care Programs"

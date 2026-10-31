@@ -93,11 +93,14 @@ export default function Contact() {
                       <p className="contact_block-note">{clinic.hoursNote}</p>
                     </div>
                     <div className="contact_block">
-                      <p className="contact_block-label">Hospital Partners</p>
+                      <p className="contact_block-label">Associated Hospitals</p>
                       <p className="contact_block-text">
-                        <span>Sarvodaya Hospital, Noida</span>
-                        <span>LYF Hospital, Noida</span>
-                        <span>Other hospitals with economical packages</span>
+                        <span>Cloud 9</span>
+                        <span>Motherland</span>
+                        <span>Sarvodaya</span>
+                        <span>LYF</span>
+                        <span>Motherhood Sector-45</span>
+                        <span>Others</span>
                       </p>
                     </div>
                   </div>
@@ -111,11 +114,11 @@ export default function Contact() {
                     className="contact_logo"
                   />
                   <img
-                    src="/assets/clinic/consultation.jpg"
+                    src="/assets/clinic/waiting-room.jpg"
                     loading="lazy"
-                    width="1000"
-                    height="1333"
-                    alt="A consultation in progress at Dr Rashmi Saxena's clinic"
+                    width="1200"
+                    height="800"
+                    alt="The waiting area at Dr Rashmi Saxena's clinic"
                     className="contact_image"
                   />
                   <p className="contact_aside-text">

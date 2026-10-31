@@ -63,7 +63,7 @@ export default function ServiceDetail() {
                       src={service.image}
                       loading="lazy"
                       width="1200"
-                      height="800"
+                      height="900"
                       alt={service.alt}
                       className="service-detail_image"
                     />

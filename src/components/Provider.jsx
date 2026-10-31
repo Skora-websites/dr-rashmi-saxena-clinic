@@ -3,9 +3,9 @@ import Eyebrow from './Eyebrow'
 
 const tags = [
   'MBBS, Maulana Azad Medical College, Delhi',
-  'MD, Obstetrics & Gynaecology',
+  'MD, (OBGYN) Lady Hardinge Medical College',
   'AOGD & FOGSI Member',
-  'Sarvodaya & LYF Hospital',
+  'Cloud 9, Motherland, Sarvodaya, LYF, Motherhood Sector-45 & Others',
 ]
 
 export default function Provider() {
@@ -22,11 +22,11 @@ export default function Provider() {
               surgery for more than twenty years.
             </p>
             <p className="provider_bio-text">
-              She completed her MBBS at Maulana Azad Medical College, Delhi, and her MD in
-              Obstetrics &amp; Gynaecology at Lady Hardinge Medical College, New Delhi. She also
-              trained in assisted reproductive techniques (infertility) at the Institute of
-              Reproductive Medicine, Kolkata. Her approach is simple: understand the whole picture
-              first, treat only what is needed, and stay with you through every stage of care.
+              She completed her MBBS at Maulana Azad Medical College, Delhi, and her MD, (OBGYN) at
+              Lady Hardinge Medical College, New Delhi. She also trained in assisted reproductive
+              techniques (IVF) at the Institute of Reproductive Medicine, Kolkata. Her approach is
+              simple: understand the whole picture first, treat only what is needed, and stay with
+              you through every stage of care.
             </p>
           </div>
           <div className="provider_tags">

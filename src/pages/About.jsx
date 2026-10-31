@@ -12,7 +12,7 @@ export default function About() {
     <>
       <Seo
         title="About Dr Rashmi Saxena — 28 Years in Women's Health | Gaur City 2"
-        description="Dr Rashmi Saxena is a senior gynaecologist, obstetrician and infertility specialist in Gaur City 2, Greater Noida. MBBS (Maulana Azad Medical College, Delhi), MD (Lady Hardinge Medical College), AOGD & FOGSI member."
+        description="Dr Rashmi Saxena is a senior gynaecologist, obstetrician and IVF specialist in Gaur City 2, Greater Noida. MBBS (Maulana Azad Medical College, Delhi), MD, (OBGYN) Lady Hardinge Medical College, AOGD & FOGSI member."
       />
       <PageHero
         eyebrow="About Dr Rashmi Saxena"
@@ -44,20 +44,19 @@ export default function About() {
               <div className="about_intro">
                 <Eyebrow dark>About Dr Rashmi Saxena</Eyebrow>
                 <h2 className="about_intro-heading" data-split>
-                  Gynaecologist, Obstetrician &amp; Infertility Specialist
+                  Gynaecologist, Obstetrician &amp; IVF Specialist
                 </h2>
                 <div className="about_intro-body">
                   <p className="about_text">
-                    Dr Rashmi Saxena is a gynaecologist, obstetrician and infertility specialist
+                    Dr Rashmi Saxena is a gynaecologist, obstetrician and IVF specialist
                     practising in Noida, with 28 years of experience. She consults at Dr Rashmi
                     Saxena&rsquo;s Women&rsquo;s Clinic in Gaur City 2, Greater Noida.
                   </p>
                   <p className="about_text">
                     Her qualifications include training in assisted reproductive techniques
-                    (infertility) at the Institute of Reproductive Medicine, Kolkata; an MD in
-                    Obstetrics &amp; Gynaecology from Lady Hardinge Medical College, New Delhi; and
-                    an MBBS from Maulana Azad Medical College, Delhi. She is a member of AOGD and
-                    FOGSI.
+                    (IVF) at the Institute of Reproductive Medicine, Kolkata; an MD, (OBGYN) from
+                    Lady Hardinge Medical College, New Delhi; and an MBBS from Maulana Azad Medical
+                    College, Delhi. She is a member of AOGD and FOGSI.
                   </p>
                 </div>
                 <div className="about_intro-grid">
@@ -74,19 +73,19 @@ export default function About() {
                   <div className="about_intro-card">
                     <h3 className="about_intro-title">Hospital affiliations</h3>
                     <p className="about_intro-text">
-                      She is associated with Sarvodaya Hospital and LYF Hospital, along with other
-                      hospitals that offer economical packages — so treatment can be planned around
-                      what a family can comfortably manage.
+                      She is associated with Cloud 9, Motherland, Sarvodaya, LYF, Motherhood
+                      Sector-45 and other hospitals that offer economical packages — so treatment
+                      can be planned around what a family can comfortably manage.
                     </p>
                   </div>
                 </div>
                 <div className="about_note">
                   <span className="about_note-label">Pregnancy care</span>
                   <p className="about_note-text">
-                    Preconception counselling comes first, before pregnancy. Antenatal care then
-                    follows trimester by trimester, with counselling at every visit on tests,
-                    ultrasound scans, nutrition and follow-ups — calm, well-supported care
-                    throughout.
+                    Preconception counselling comes first, before pregnancy. Antenatal &amp;
+                    Gynaecological Care then follows trimester by trimester, with counselling at
+                    every visit on tests, ultrasound scans, nutrition and follow-ups — calm,
+                    well-supported care throughout.
                   </p>
                 </div>
               </div>
@@ -106,15 +105,15 @@ export default function About() {
                     tailored to her needs.
                   </p>
                   <p className="about_text">
-                    She completed her MBBS from Maulana Azad Medical College, Delhi, and her MD in
-                    Obstetrics &amp; Gynaecology from Lady Hardinge Medical College, New Delhi. She
-                    has advanced clinical training in infertility assessment, ovulation induction
-                    and assisted reproductive technologies.
+                    She completed her MBBS from Maulana Azad Medical College, Delhi, and her MD,
+                    (OBGYN) from Lady Hardinge Medical College, New Delhi. She has advanced clinical
+                    training in IVF assessment, ovulation induction and assisted reproductive
+                    technologies.
                   </p>
                   <p className="about_text">
-                    Deliveries and advanced gynaecological surgeries are performed at Sarvodaya
-                    Hospital and LYF Hospital, and at other Noida hospitals that offer economical
-                    packages — with the highest standards of safety and care.
+                    Deliveries and advanced gynaecological surgeries are performed at Cloud 9,
+                    Motherland, Sarvodaya, LYF, Motherhood Sector-45 and other Noida hospitals that
+                    offer economical packages — with the highest standards of safety and care.
                   </p>
                   <ul className="about_credentials">
                     {credentials.map((item) => (
