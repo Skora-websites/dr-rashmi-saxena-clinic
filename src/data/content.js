@@ -340,6 +340,7 @@ export const reviews = [
   {
     name: 'Vikas Salar',
     date: 'a month ago',
+    rating: 5,
     quote:
       '“Dr Rashmi Saxena is an absolute beacon of empathy, professionalism, and unwavering support. Throughout our entire journey, her extraordinary expertise and compassionate guidance gave us unmatched peace of mind. Every visit felt personalized, comforting, and backed by world-class medical insight. We wholeheartedly recommend her to any family seeking a truly brilliant gynecologist!”',
     avatar: '/assets/reviews/vikas-salar.png',
@@ -349,6 +350,7 @@ export const reviews = [
   {
     name: 'Vijay Pal',
     date: '4 months ago',
+    rating: 5,
     quote:
       '“What a relief to find such a compassionate gynecologist! Throughout my pregnancy, I received top-notch care, especially during the high-risk stages. The doctor’s expertise and reassuring nature helped me navigate the challenges smoothly. Grateful for the positive experience!”',
     avatar: '/assets/reviews/vijay-pal.png',
@@ -358,6 +360,7 @@ export const reviews = [
   {
     name: 'Ashish Kumar',
     date: '3 months ago',
+    rating: 5,
     quote:
       '“We are extremely thankful to Dr. Rashmi for the successful delivery of our baby. She provided excellent care and guidance throughout the pregnancy. Her calm nature, expertise, and support gave us confidence at every step. We truly appreciate her dedication and highly recommend her to anyone looking for the best gynecologist.”',
     avatar: '/assets/reviews/ashish-kumar.png',
@@ -367,6 +370,7 @@ export const reviews = [
   {
     name: 'Prince Chauhan',
     date: '4 months ago',
+    rating: 5,
     quote:
       '“The level of care I received was outstanding. From my first visit, the doctor was attentive and focused on my needs. The clinic has a comfortable atmosphere that made each visit pleasant. I felt really supported during my postnatal care.”',
     avatar: '/assets/reviews/prince-chauhan.png',
@@ -376,6 +380,7 @@ export const reviews = [
   {
     name: 'Ekta Gupta',
     date: '2 months ago',
+    rating: 5,
     quote:
       '“From my first visit, I felt like I was in good hands. The doctor was reassuring and very knowledgeable. I appreciated her personalized approach to my care. It made a big difference during my pregnancy journey.”',
     avatar: '/assets/reviews/ekta-gupta.png',
@@ -385,6 +390,7 @@ export const reviews = [
   {
     name: 'Jyoti Joshi',
     date: '2 months ago',
+    rating: 5,
     quote:
       '“As someone dealing with PCOD, I was anxious about my treatment options. The consultation was very informative and personalized. I felt understood and empowered to take charge of my health. I truly appreciate the approach taken here.”',
     avatar: '/assets/reviews/jyoti-joshi.png',
@@ -392,13 +398,32 @@ export const reviews = [
     service: 'PCOS / PCOD',
   },
   {
+    name: 'Rajdeep Singh',
+    date: '2 months ago',
+    rating: 5,
+    quote: '“Thanks & congratulations!”',
+    avatar: '/assets/reviews/rajdeep-singh.png',
+    alt: 'Google profile photo of Rajdeep Singh',
+    service: 'Google review',
+  },
+  {
     name: 'Somya Luthra',
     date: '2 months ago',
+    rating: 5,
     quote:
       '“I had a great experience with the PCOD treatment. The doctor gave me a personalized treatment plan and followed up diligently. I felt hopeful and supported every step of the way. The friendly staff made every visit enjoyable as well.”',
     avatar: '/assets/reviews/somya-luthra.png',
     alt: 'Google profile photo of Somya Luthra',
     service: 'PCOD Treatment',
+  },
+  {
+    name: 'Sandhya Mandal',
+    date: '2 years ago',
+    rating: 4,
+    quote: '“Thanks!”',
+    avatar: '/assets/reviews/sandhya-mandal.png',
+    alt: 'Google profile photo of Sandhya Mandal',
+    service: 'Google review',
   },
 ]
 

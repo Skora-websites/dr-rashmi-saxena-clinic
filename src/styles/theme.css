@@ -2072,103 +2072,94 @@ html.menu-open .whatsapp-float {
   pointer-events: none;
 }
 
-/* ---------- reviews: real Google review cards ---------- */
-.reviews_stage {
-  width: min(48rem, 100%);
-  display: grid;
+/* ---------- reviews: coverflow profile cards ---------- */
+.reviews_slide {
+  background: radial-gradient(circle at 50% 24%, rgba(255, 249, 252, 0.16), transparent 62%),
+    linear-gradient(160deg, rgba(255, 249, 252, 0.13), rgba(12, 26, 58, 0.55));
+  border: 1px solid rgba(255, 249, 252, 0.14);
 }
 
-.reviews_card {
-  grid-area: 1 / 1;
+.reviews_slide.is-hidden {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(1rem);
-  transition: opacity 0.5s cubic-bezier(0.625, 0.05, 0, 1),
-    transform 0.5s cubic-bezier(0.625, 0.05, 0, 1), visibility 0.5s;
-  background: rgba(255, 249, 252, 0.07);
-  border: 1px solid rgba(255, 249, 252, 0.16);
-  border-radius: 1.25rem;
-  padding: 2.5rem 2.75rem;
+  pointer-events: none;
+}
+
+.reviews_profile {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-}
-
-.reviews_card.is-current {
-  opacity: 1;
-  visibility: visible;
-  transform: none;
-}
-
-.reviews_card-stars {
-  color: #f6c65b;
-  font-size: 1.15rem;
-  letter-spacing: 0.18em;
-}
-
-.reviews_card-quote {
-  color: var(--_colors---brand--cream);
-  font-size: var(--_typography---text-size--x-large);
-  line-height: var(--_typography---line-height--comfortable);
-  letter-spacing: var(--_typography---letter-spacing--x-large);
-  margin: 0;
-}
-
-.reviews_card-author {
-  display: flex;
   align-items: center;
-  gap: 0.875rem;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  text-align: center;
 }
 
-.reviews_card-avatar {
-  width: 3rem;
-  height: 3rem;
+.reviews_profile-avatar {
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
   object-fit: cover;
-  background: rgba(255, 249, 252, 0.12);
-  flex: none;
+  border: 3px solid rgba(255, 249, 252, 0.85);
+  background: #fff9fc;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
 }
 
-.reviews_card-person {
-  display: grid;
-  gap: 0.15rem;
-}
-
-.reviews_card-name {
+.reviews_profile-name {
   color: var(--_colors---brand--cream);
+  font-size: 1.15rem;
   font-weight: 600;
-  font-size: 1rem;
 }
 
-.reviews_card-meta {
-  color: rgba(255, 249, 252, 0.65);
-  font-size: 0.85rem;
+.reviews_profile-stars {
+  color: #f6c65b;
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
 }
 
-.reviews_card-service {
-  margin-left: auto;
-  color: rgba(255, 249, 252, 0.8);
-  font-size: 0.72rem;
+.reviews_profile-stars-empty {
+  color: rgba(255, 249, 252, 0.3);
+}
+
+.reviews_profile-meta {
+  color: rgba(255, 249, 252, 0.72);
+  font-size: 0.8rem;
+}
+
+.reviews_profile-service {
+  color: rgba(255, 249, 252, 0.85);
+  font-size: 0.66rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  border: 1px solid rgba(255, 249, 252, 0.24);
+  border: 1px solid rgba(255, 249, 252, 0.28);
   border-radius: 999px;
-  padding: 0.35rem 0.75rem;
+  padding: 0.3rem 0.7rem;
   white-space: nowrap;
 }
 
-.reviews_controls {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.reviews_slide.is-left .reviews_profile,
+.reviews_slide.is-right .reviews_profile {
+  padding: 0.75rem;
 }
 
-.reviews_dots {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  height: auto;
+.reviews_slide.is-left .reviews_profile-name,
+.reviews_slide.is-left .reviews_profile-stars,
+.reviews_slide.is-left .reviews_profile-meta,
+.reviews_slide.is-left .reviews_profile-service,
+.reviews_slide.is-right .reviews_profile-name,
+.reviews_slide.is-right .reviews_profile-stars,
+.reviews_slide.is-right .reviews_profile-meta,
+.reviews_slide.is-right .reviews_profile-service {
+  display: none;
+}
+
+.reviews_slide.is-left .reviews_profile-avatar,
+.reviews_slide.is-right .reviews_profile-avatar {
+  width: 62%;
+  height: 62%;
 }
 
 .reviews_all-link {
@@ -2185,22 +2176,30 @@ html.menu-open .whatsapp-float {
 }
 
 @media screen and (max-width: 767px) {
-  .reviews_card {
-    padding: 1.5rem;
-    border-radius: 1rem;
-    gap: 1rem;
+  .reviews_profile {
+    padding: 1rem;
+    gap: 0.35rem;
   }
 
-  .reviews_card-quote {
-    font-size: var(--_typography---text-size--medium);
-    letter-spacing: var(--_typography---letter-spacing--medium);
+  .reviews_profile-avatar {
+    width: 5rem;
+    height: 5rem;
   }
 
-  .reviews_card-service {
-    margin-left: 0;
+  .reviews_profile-name {
+    font-size: 1rem;
   }
 
-  .reviews_controls {
-    gap: 0.5rem;
+  .reviews_profile-stars {
+    font-size: 0.8rem;
+  }
+
+  .reviews_profile-meta {
+    font-size: 0.72rem;
+  }
+
+  .reviews_profile-service {
+    font-size: 0.6rem;
+    padding: 0.25rem 0.6rem;
   }
 }
