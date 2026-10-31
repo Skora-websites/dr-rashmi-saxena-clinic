@@ -2203,3 +2203,91 @@ html.menu-open .whatsapp-float {
     padding: 0.25rem 0.6rem;
   }
 }
+
+/* ---------- location: card + embedded map ---------- */
+.location_map {
+  position: relative;
+  width: 100%;
+  min-height: 17rem;
+  margin-top: 1.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 249, 252, 0.28);
+  border-radius: 12px;
+  background-color: #0f2d5e;
+  box-shadow: 0 28px 60px rgba(9, 20, 44, 0.35);
+}
+
+.location_map iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  pointer-events: none;
+  filter: saturate(0.95);
+}
+
+.location_map-link {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.25rem 1.25rem 2.9rem;
+  background-image: linear-gradient(to top, rgba(9, 20, 44, 0.55), rgba(9, 20, 44, 0) 55%);
+  text-decoration: none;
+}
+
+.location_map-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  background-color: var(--brand-blue);
+  color: var(--brand-blush);
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 14px 30px rgba(9, 20, 44, 0.4);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.location_map-pill-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.location_map-link:hover .location_map-pill,
+.location_map-link:focus-visible .location_map-pill {
+  background-color: var(--brand-purple);
+  transform: translateY(-2px);
+}
+
+@media screen and (min-width: 992px) {
+  .location_component {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    align-content: end;
+    align-items: stretch;
+    column-gap: 2rem;
+  }
+
+  .location_card {
+    width: auto;
+  }
+
+  .location_map {
+    min-height: 24rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .location_map {
+    min-height: 18rem;
+  }
+
+  .location_map-link {
+    padding: 1rem 1rem 2.6rem;
+  }
+}

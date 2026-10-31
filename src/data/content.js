@@ -31,10 +31,14 @@ export const clinic = {
   rating: '4.9',
   reviewCount: '166',
   maps: 'https://www.google.com/maps/search/?api=1&query=BEST+GYNAECOLOGIST+DR+RASHMI+SAXENA+Gaur+City+2',
+  directions:
+    'https://www.google.com/maps/dir/?api=1&destination=BEST+GYNAECOLOGIST+DR+RASHMI+SAXENA+Gaur+City+2+Greater+Noida',
   googleProfile:
     'https://www.google.com/search?kgmid=/g/11kfjq8j47&hl=en-IN&q=BEST+GYNAECOLOGIST+DR+RASHMI+SAXENA',
   mapEmbed:
     'https://maps.google.com/maps?q=BEST%20GYNAECOLOGIST%20DR%20RASHMI%20SAXENA%2C%20Gaur%20City%202%2C%20Greater%20Noida&t=&z=16&ie=UTF8&iwloc=&output=embed',
+  mapEmbedPin:
+    'https://maps.google.com/maps?q=28.6183832,77.4181276&z=17&ie=UTF8&output=embed',
 }
 
 export const services = [

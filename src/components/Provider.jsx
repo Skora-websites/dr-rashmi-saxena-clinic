@@ -44,10 +44,10 @@ export default function Provider() {
             </div>
             <div className="provider_image-wrapper">
               <img
-                src="/assets/clinic/doctor-at-desk.jpg"
+                src="/assets/clinic/doctor-portrait.jpg"
                 loading="lazy"
                 width="800"
-                height="450"
+                height="800"
                 alt="Dr Rashmi Saxena at her desk in the clinic"
                 className="provider_image is-doctor"
                 data-img-reveal

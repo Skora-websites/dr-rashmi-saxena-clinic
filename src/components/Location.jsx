@@ -50,6 +50,35 @@ export default function Location() {
                 </div>
               </div>
             </div>
+            <div className="location_map">
+              <iframe
+                src={clinic.mapEmbedPin}
+                title="Dr Rashmi Saxena's Women's Clinic on Google Maps"
+                loading="lazy"
+                tabIndex={-1}
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+              <a
+                href={clinic.directions}
+                target="_blank"
+                rel="noreferrer"
+                className="location_map-link"
+                aria-label="Get directions to Dr Rashmi Saxena's Women's Clinic in Google Maps"
+              >
+                <span className="location_map-pill">
+                  <span className="location_map-pill-text">Get directions</span>
+                  <img
+                    src="/assets/template/home-icon-arrow-right.webp"
+                    loading="lazy"
+                    width="24"
+                    height="24"
+                    alt=""
+                    className="location_map-pill-icon"
+                  />
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
