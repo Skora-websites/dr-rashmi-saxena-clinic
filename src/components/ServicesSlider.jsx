@@ -18,7 +18,7 @@ export default function ServicesSlider() {
       const animate = () => {
         const image = slide.querySelector('.treat-slider_image')
         const parts = slide.querySelectorAll(
-          '.treat-slider_title, .treat-slider_tags, .treat-slider_text, .treat-slider_price'
+          '.treat-slider_title, .treat-slider_tags, .treat-slider_text'
         )
         const tl = gsap.timeline()
         if (image) {
@@ -112,14 +112,6 @@ export default function ServicesSlider() {
                           ))}
                         </div>
                         <p className="treat-slider_text">{service.text}</p>
-                      </div>
-                      <div className="treat-slider_price">
-                        <p className="treat-slider_price-label">From</p>
-                        <div className="treat-slider_price-row">
-                          <div className="treat-slider_price-amount">₹{service.price}</div>
-                          <div className="treat-slider_price-amount">/</div>
-                          <div className="treat-slider_price-unit">{service.unit}</div>
-                        </div>
                       </div>
                     </div>
                     <p className="treat-slider_counter">

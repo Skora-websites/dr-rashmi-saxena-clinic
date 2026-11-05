@@ -5,7 +5,7 @@ const tags = [
   'MBBS, Maulana Azad Medical College, Delhi',
   'MD, (OBGYN) Lady Hardinge Medical College',
   'AOGD & FOGSI Member',
-  'Cloud 9, Motherland, Sarvodaya, LYF, Motherhood Sector-45 & Others',
+  'Cloud 9, Yatharth, Motherland, Sarvodaya, LYF, Motherhood Sector-45 & Others',
 ]
 
 export default function Provider() {

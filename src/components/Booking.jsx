@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Eyebrow from './Eyebrow'
 import { clinic, services } from '../data/content'
 
@@ -7,16 +7,42 @@ const interests = [
   'General Consultation',
 ]
 
-const times = ['6:30 PM', '7:00 PM', '7:30 PM', '8:00 PM', '11:30 AM', '12:00 PM', '12:30 PM', '1:00 PM']
+const times = [
+  '5:30 PM',
+  '6:00 PM',
+  '6:30 PM',
+  '7:00 PM',
+  '7:30 PM',
+  '8:00 PM',
+  '11:30 AM',
+  '12:00 PM',
+  '12:30 PM',
+  '1:00 PM',
+]
 
-function formatDate(value) {
-  const digits = value.replace(/\D/g, '').slice(0, 6)
-  const parts = [digits.slice(0, 2), digits.slice(2, 4), digits.slice(4, 6)].filter(Boolean)
-  return parts.join('/')
+function formatDateForMessage(value) {
+  if (!value) return 'Flexible'
+  const [year, month, day] = value.split('-')
+  return `${day}/${month}/${year}`
 }
 
 export default function Booking() {
   const [sent, setSent] = useState(false)
+  const dateRef = useRef(null)
+
+  const openCalendar = () => {
+    const input = dateRef.current
+    if (!input) return
+    if (typeof input.showPicker === 'function') {
+      try {
+        input.showPicker()
+        return
+      } catch {
+        input.focus()
+      }
+    }
+    input.focus()
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -28,7 +54,7 @@ export default function Booking() {
       `Email: ${data.get('email')}`,
       `Interest: ${data.get('interest') || 'Not specified'}`,
       `Patient: ${data.get('patient-type') || 'Not specified'}`,
-      `Preferred date: ${data.get('preferred-date') || 'Flexible'}`,
+      `Preferred date: ${formatDateForMessage(data.get('preferred-date'))}`,
       `Preferred time: ${data.get('preferred-time') || 'Flexible'}`,
     ].join('\n')
 
@@ -160,26 +186,28 @@ export default function Booking() {
                               </label>
                               <div className="form_control">
                                 <input
-                                  className="form_input is-large w-input"
-                                  autoComplete="off"
-                                  maxLength="8"
+                                  ref={dateRef}
+                                  className="form_input is-large w-input is-date"
                                   name="preferred-date"
-                                  inputMode="numeric"
-                                  placeholder="DD/MM/YY"
-                                  type="text"
+                                  type="date"
                                   id="booking-date"
-                                  onChange={(event) => {
-                                    event.currentTarget.value = formatDate(event.currentTarget.value)
-                                  }}
+                                  min={new Date().toISOString().slice(0, 10)}
                                 />
-                                <img
-                                  src="/assets/template/form-calendar.webp"
-                                  loading="lazy"
-                                  width="24"
-                                  height="24"
-                                  alt=""
-                                  className="form_icon is-large"
-                                />
+                                <button
+                                  type="button"
+                                  className="form_date-button"
+                                  onClick={openCalendar}
+                                  aria-label="Open calendar to choose a preferred date"
+                                >
+                                  <img
+                                    src="/assets/template/form-calendar.webp"
+                                    loading="lazy"
+                                    width="24"
+                                    height="24"
+                                    alt=""
+                                    className="form_date-icon"
+                                  />
+                                </button>
                               </div>
                             </div>
                             <div className="form_field">

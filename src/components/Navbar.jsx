@@ -8,17 +8,17 @@ const menuColumns = [
     label: 'Care',
     links: [
       { text: 'Preconception Counselling', href: '/services/preconception-counselling' },
-      { text: 'Antenatal & Gynaecological Care', href: '/services/antenatal-care' },
+      { text: 'Antenatal Care', href: '/services/antenatal-care' },
       { text: 'Delivery', href: '/services/delivery' },
-      { text: 'Adolescent Health', href: '/services/adolescent-health' },
-      { text: 'Perimenopausal Problems', href: '/services/perimenopausal-problems' },
-      { text: 'Gynaecological Problems', href: '/services/gynaecological-problems' },
-      { text: 'PCOS / PMOS', href: '/services/pcos-pmos' },
       { text: 'Gynaecological Surgeries', href: '/services/gynaecological-surgeries' },
       { text: 'Vaginal Surgeries', href: '/services/vaginal-surgeries' },
-      { text: 'Vaccination During Pregnancy', href: '/services/vaccination-during-pregnancy' },
+      { text: 'Gynaecological Problems', href: '/services/gynaecological-problems' },
+      { text: 'Adolescent Health', href: '/services/adolescent-health' },
+      { text: 'PCOS / PMOS', href: '/services/pcos-pmos' },
+      { text: 'Perimenopausal Problems', href: '/services/perimenopausal-problems' },
       { text: 'Cancer Detection', href: '/services/cancer-detection' },
       { text: 'Family Planning Counselling', href: '/services/family-planning' },
+      { text: 'Vaccination', href: '/services/vaccination-during-pregnancy' },
     ],
   },
   {
@@ -136,7 +136,7 @@ export default function Navbar() {
                 <path d="M8 3.5v4M16 3.5v4M3.5 10.5h17" />
               </svg>
               <span>
-                Evening OPD Mon–Sat 6:30–8:30 pm
+                Evening OPD Mon–Fri 5:30–8:00 pm
                 <span className="navbar_banner-note"> · Walk-ins welcome</span>
               </span>
             </p>
@@ -204,6 +204,9 @@ export default function Navbar() {
               </Link>
 
               <div className="navbar_actions">
+                <Link to="/services" className="navbar_services">
+                  Services
+                </Link>
                 <a href={clinic.phoneHref} className="navbar_contact">
                   <svg
                     aria-hidden="true"
@@ -248,7 +251,7 @@ export default function Navbar() {
                     <div className="navbar_button-text">Book an Appointment</div>
                   </Link>
                   <p className="navbar_menu-contact">
-                    {clinic.addressShort} · Mon–Sat, 6:30–8:30 pm
+                    {clinic.addressShort} · Mon–Fri, 5:30–8:00 pm
                   </p>
                 </div>
               </div>

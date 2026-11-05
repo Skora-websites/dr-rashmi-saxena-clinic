@@ -12,7 +12,7 @@ export default function About() {
     <>
       <Seo
         title="About Dr Rashmi Saxena — 28 Years in Women's Health | Gaur City 2"
-        description="Dr Rashmi Saxena is a senior gynaecologist, obstetrician and IVF specialist in Gaur City 2, Greater Noida. MBBS (Maulana Azad Medical College, Delhi), MD, (OBGYN) Lady Hardinge Medical College, AOGD & FOGSI member."
+        description="Dr Rashmi Saxena is a senior gynaecologist, obstetrician and fertility specialist in Gaur City 2, Greater Noida. MBBS (Maulana Azad Medical College, Delhi), MD, (OBGYN) Lady Hardinge Medical College, AOGD & FOGSI member."
       />
       <PageHero
         eyebrow="About Dr Rashmi Saxena"
@@ -44,11 +44,11 @@ export default function About() {
               <div className="about_intro">
                 <Eyebrow dark>About Dr Rashmi Saxena</Eyebrow>
                 <h2 className="about_intro-heading" data-split>
-                  Gynaecologist, Obstetrician &amp; IVF Specialist
+                  Gynaecologist, Obstetrician &amp; Fertility Specialist
                 </h2>
                 <div className="about_intro-body">
                   <p className="about_text">
-                    Dr Rashmi Saxena is a gynaecologist, obstetrician and IVF specialist
+                    Dr Rashmi Saxena is a gynaecologist, obstetrician and fertility specialist
                     practising in Noida, with 28 years of experience. She consults at Dr Rashmi
                     Saxena&rsquo;s Women&rsquo;s Clinic in Gaur City 2, Greater Noida.
                   </p>
@@ -73,19 +73,19 @@ export default function About() {
                   <div className="about_intro-card">
                     <h3 className="about_intro-title">Hospital affiliations</h3>
                     <p className="about_intro-text">
-                      She is associated with Cloud 9, Motherland, Sarvodaya, LYF, Motherhood
-                      Sector-45 and other hospitals that offer economical packages — so treatment
-                      can be planned around what a family can comfortably manage.
+                      She is associated with Cloud 9, Yatharth, Motherland, Sarvodaya, LYF,
+                      Motherhood Sector-45 and other hospitals that offer economical packages — so
+                      treatment can be planned around what a family can comfortably manage.
                     </p>
                   </div>
                 </div>
                 <div className="about_note">
                   <span className="about_note-label">Pregnancy care</span>
                   <p className="about_note-text">
-                    Preconception counselling comes first, before pregnancy. Antenatal &amp;
-                    Gynaecological Care then follows trimester by trimester, with counselling at
-                    every visit on tests, ultrasound scans, nutrition and follow-ups — calm,
-                    well-supported care throughout.
+                    Preconception counselling comes first, before pregnancy. Antenatal care is
+                    given with focus on high risk factors since beginning, then follows trimester
+                    by trimester, with counselling at every visit on tests, ultrasound scans,
+                    nutrition and follow-ups — calm, well-supported care throughout.
                   </p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export default function About() {
                   </p>
                   <p className="about_text">
                     Deliveries and advanced gynaecological surgeries are performed at Cloud 9,
-                    Motherland, Sarvodaya, LYF, Motherhood Sector-45 and other Noida hospitals that
+                    Yatharth, Motherland, Sarvodaya, LYF, Motherhood Sector-45 and other Noida hospitals that
                     offer economical packages — with the highest standards of safety and care.
                   </p>
                   <ul className="about_credentials">

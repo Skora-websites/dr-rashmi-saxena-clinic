@@ -1,4 +1,27 @@
 import { Link } from 'react-router-dom'
+import { clinic } from '../data/content'
+
+const LocationIcon = () => (
+  <svg
+    aria-hidden="true"
+    className="hero_meta-icon"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.7"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z" />
+    <circle cx="12" cy="10" r="2.6" />
+  </svg>
+)
+
+const StarIcon = () => (
+  <svg aria-hidden="true" className="hero_meta-star" viewBox="0 0 24 24" fill="currentColor">
+    <path d="m12 3.2 2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8Z" />
+  </svg>
+)
 
 const ArrowIcon = () => (
   <svg
@@ -150,7 +173,7 @@ export default function Hero() {
                 fetchPriority="high"
               />
             </div>
-            <p className="home-hero_eyebrow">Obstetrician · Gynaecologist · IVF Specialist</p>
+            <p className="home-hero_eyebrow">Obstetrician · Gynaecologist · Fertility Specialist</p>
             <h1 className="home-hero_name">Dr. Rashmi Saxena</h1>
             <h2 className="home-hero_heading">Because your health deserves the best</h2>
             <span aria-hidden="true" className="hero_rule" />
@@ -180,6 +203,29 @@ export default function Hero() {
                   <span>Explore Services</span>
                   <ArrowIcon />
                 </Link>
+              </div>
+              <div className="hero_meta">
+                <a
+                  href={clinic.directions}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hero_meta-location"
+                  aria-label="Open the clinic location in Google Maps"
+                  title="Open location in Google Maps"
+                >
+                  <LocationIcon />
+                </a>
+                <a
+                  href={clinic.googleProfile}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hero_meta-reviews"
+                >
+                  <StarIcon />
+                  <span>
+                    <strong>{clinic.rating}</strong> · {clinic.reviewCount} Google reviews
+                  </span>
+                </a>
               </div>
             </div>
           </div>

@@ -15,11 +15,11 @@ export const clinic = {
     'Rani Laxmibai Nagar, Yusufpur, Gaur City 2',
     'Greater Noida, Uttar Pradesh 201009',
   ],
-  hoursLabel: 'Mon – Sat 6:30–8:30 pm · Sat & Sun 11:30 am–1:30 pm',
+  hoursLabel: 'Mon – Fri 5:30–8:00 pm · Sat & Sun 11:30 am–1:30 pm',
   hours: [
     {
-      days: 'Monday – Saturday',
-      time: '6:30 PM – 8:30 PM',
+      days: 'Monday – Friday',
+      time: '5:30 PM – 8:00 PM',
     },
     {
       days: 'Saturday & Sunday',
@@ -63,12 +63,12 @@ export const services = [
   },
   {
     slug: 'antenatal-care',
-    title: 'Antenatal & Gynaecological Care',
-    fullTitle: 'Antenatal & Gynaecological Care — Normal & High-Risk Pregnancy',
-    tags: ['Antenatal & Gynaecological Care', 'High-Risk', 'Nutrition'],
+    title: 'Antenatal Care',
+    fullTitle: 'Antenatal Care — Normal & High-Risk Pregnancy',
+    tags: ['Antenatal Care', 'High-Risk', 'Nutrition'],
     text: 'Trimester-by-trimester care for normal and high-risk pregnancies, recognised early.',
     intro:
-      'Complete Antenatal & Gynaecological Care for normal and high-risk pregnancy — trimester-wise counselling on tests, ultrasound scans, nutrition and follow-ups, with calm and well-supported care throughout.',
+      'Complete antenatal care for normal and high-risk pregnancy — trimester-wise counselling on tests, ultrasound scans, nutrition and follow-ups, with calm and well-supported care throughout.',
     includes: [
       'Trimester-wise counselling on tests and USG scans',
       'Trimester-by-trimester check-ups and follow-ups',
@@ -87,11 +87,12 @@ export const services = [
     tags: ['Normal', 'Painless', 'Caesarean'],
     text: 'Delivery planning with painless normal delivery and caesarean section when needed.',
     intro:
-      'Delivery care at Sarvodaya Hospital and LYF Hospital, plus other Noida hospitals with economical packages — normal delivery, painless normal delivery with epidural support, and caesarean section when it is medically indicated.',
+      'Delivery care at Sarvodaya, LYF and Yatharth Hospital, plus other Noida hospitals with economical packages — normal delivery, painless normal delivery with epidural support, and caesarean section when it is medically indicated.',
     includes: [
       'Normal delivery with labour support',
       'Painless normal delivery with epidural analgesia',
       'Caesarean section when medically indicated',
+      'High risk pregnancies are recognised at earliest',
       'Delivery planned in advance with hospital partners',
     ],
     price: '700',
@@ -100,93 +101,18 @@ export const services = [
     alt: 'A family with their newborn baby after delivery',
   },
   {
-    slug: 'adolescent-health',
-    title: 'Adolescent Health',
-    fullTitle: 'Adolescent Health & Puberty Care',
-    tags: ['Puberty', 'Cycles', 'Counselling'],
-    text: 'Gentle, private care for teenage girls — periods, puberty and hormonal concerns.',
-    intro:
-      'Confidential care for adolescent girls and their families — irregular or painful periods, puberty concerns, PCOS and nutrition, explained in a comfortable setting.',
-    includes: [
-      'Irregular or painful periods in teens',
-      'Puberty and growth-related concerns',
-      'PCOS and hormonal assessment',
-      'Nutrition and lifestyle counselling',
-    ],
-    price: '700',
-    unit: 'visit',
-    image: '/assets/clinic/adolescent-health.jpg',
-    alt: 'A teenage girl and her mother speaking with the doctor at the clinic',
-  },
-  {
-    slug: 'perimenopausal-problems',
-    title: 'Perimenopausal Problems',
-    fullTitle: 'Perimenopause & Menopause Care',
-    tags: ['Hot Flashes', 'Sleep', 'Hormones'],
-    text: 'Support for hot flushes, mood, sleep and cycle changes around menopause.',
-    intro:
-      'Practical care through perimenopause and menopause — managing hot flushes, sleep disturbance, mood changes, irregular periods and bone health with a personalised plan.',
-    includes: [
-      'Assessment of perimenopausal symptoms',
-      'Hormonal and thyroid evaluation',
-      'Bone and heart health guidance',
-      'Lifestyle, sleep and nutrition support',
-    ],
-    price: '700',
-    unit: 'visit',
-    image: '/assets/clinic/perimenopausal-care.jpg',
-    alt: 'An older woman discussing menopausal symptoms with the doctor',
-  },
-  {
-    slug: 'gynaecological-problems',
-    title: 'Gynaecological Problems',
-    fullTitle: 'Gynaecological Problems & Infections',
-    tags: ['Infections', 'Fibroids', 'Pain'],
-    text: 'Care for infections, pain, fibroids, cysts and irregular bleeding.',
-    intro:
-      'Diagnosis and treatment for common gynaecological concerns — infections and discharge, pelvic pain, fibroids, ovarian cysts and abnormal uterine bleeding.',
-    includes: [
-      'Infections and discharge treatment',
-      'Pelvic pain and abnormal bleeding',
-      'Fibroid and ovarian cyst assessment',
-      'In-clinic investigations and follow-up',
-    ],
-    price: '700',
-    unit: 'visit',
-    image: '/assets/clinic/gynaecological-problems.jpg',
-    alt: 'A woman describing pelvic discomfort to the doctor at the clinic',
-  },
-  {
-    slug: 'pcos-pmos',
-    title: 'PCOS / PMOS',
-    fullTitle: 'PCOS / PMOS, Periods & Hormones',
-    tags: ['PCOS', 'Irregular Cycles', 'Thyroid'],
-    text: 'Long-term, practical management of PCOS, irregular cycles and hormonal imbalance.',
-    intro:
-      'Diagnosis and long-term management of PCOS, PMOS, menstrual disorders, thyroid dysfunction and hormonal imbalance — combining medical therapy with diet and lifestyle support.',
-    includes: [
-      'PCOS and PMOS diagnosis and management',
-      'Treatment for irregular or painful periods',
-      'Thyroid and hormonal balance',
-      'Diet and lifestyle planning',
-    ],
-    price: '700',
-    unit: 'visit',
-    image: '/assets/clinic/pcos-pmos.jpg',
-    alt: 'A young woman reviewing her report with the doctor at the clinic',
-  },
-  {
     slug: 'gynaecological-surgeries',
     title: 'Gynaecological Surgeries',
-    fullTitle: 'Gynaecological Surgeries',
-    tags: ['Laparoscopy', 'Hysteroscopy'],
-    text: 'Minimally invasive and open gynae surgery at our associated hospitals — Cloud 9, Motherland & Sarvodaya.',
+    fullTitle: 'Gynaecological Surgeries (Open)',
+    tags: ['Open', 'Laparoscopy', 'Hysteroscopy'],
+    text: 'Open, laparoscopic and other gynaecological procedures at our associated hospitals — Cloud 9, Yatharth, Motherland & Sarvodaya.',
     intro:
-      'Hysterectomy, myomectomy, ovarian cystectomy and laparoscopic procedures performed at our associated hospitals — Cloud 9, Motherland & Sarvodaya — with clear pre- and post-operative care.',
+      'Hysterectomy, myomectomy, ovarian cystectomy and other open and laparoscopic gynaecological procedures performed at our associated hospitals — Cloud 9, Yatharth, Motherland & Sarvodaya — with clear pre- and post-operative care.',
     includes: [
+      'Open gynaecological procedures',
       'Hysterectomy and myomectomy',
       'Ovarian cystectomy',
-      'Laparoscopic and open procedures',
+      'Laparoscopic and other gynaecological procedures',
       'Post-operative review and follow-up',
     ],
     price: '700',
@@ -198,14 +124,14 @@ export const services = [
     slug: 'vaginal-surgeries',
     title: 'Vaginal Surgeries',
     fullTitle: 'Vaginal Surgeries — Vaginal Hysterectomy & Repair',
-    tags: ['Vaginal Hysterectomy', 'Prolapse Repair', 'Laser Tightening'],
-    text: 'Vaginal hysterectomy, prolapse repair and laser vaginal tightening, with clear pre- and post-operative care.',
+    tags: ['Vaginal Hysterectomy', 'Prolapse Repair', 'Fibroid', 'Adenomyosis'],
+    text: 'Vaginal hysterectomy, prolapse repair and vaginal tightening, with clear pre- and post-operative care.',
     intro:
-      'Vaginal surgery for prolapse, abnormal bleeding and laxity — vaginal hysterectomy, vaginal wall repair and laser vaginal tightening, performed at our associated hospitals with careful pre-operative assessment and follow-up.',
+      'Vaginal surgery for prolapse, abnormal bleeding and laxity — vaginal hysterectomy, vaginal wall repair and vaginal tightening, performed at our associated hospitals with careful pre-operative assessment and follow-up.',
     includes: [
       'Vaginal hysterectomy',
       'Prolapse and vaginal wall repair',
-      'Laser vaginal tightening',
+      'Fibroid and adenomyosis',
       'Pre-operative assessment and post-operative review',
     ],
     price: '700',
@@ -214,36 +140,94 @@ export const services = [
     alt: 'A gynaecologist in surgical scrubs preparing for a procedure',
   },
   {
-    slug: 'vaccination-during-pregnancy',
-    title: 'Vaccination During Pregnancy',
-    fullTitle: 'Vaccination During Pregnancy — Flu & Tdap',
-    tags: ['Flu Vaccine', 'Tdap', 'Safe in Pregnancy'],
-    text: 'Flu and Tdap vaccination in pregnancy — safe for you, and protective for your baby in the first months.',
+    slug: 'gynaecological-problems',
+    title: 'Gynaecological Problems',
+    fullTitle: 'Gynaecological Problems & Infections',
+    tags: ['Infections', 'Fibroids', 'Irregular Periods'],
+    text: 'Care for infections, irregular periods, fibroids, cysts and bleeding.',
     intro:
-      'Recommended vaccines during pregnancy — influenza (flu) and Tdap (tetanus, diphtheria and whooping cough) — timed to the right trimester, with counselling on safety, side effects and the protection that passes to your baby.',
+      'Diagnosis and treatment for common gynaecological concerns — infections and discharge, irregular periods, fibroids, ovarian cysts and abnormal uterine bleeding.',
     includes: [
-      'Influenza (flu) vaccine in any trimester',
-      'Tdap in the third trimester',
-      'Counselling on vaccine safety in pregnancy',
-      'Vaccination record and follow-up',
+      'Infections and discharge treatment',
+      'Irregular periods and abnormal bleeding',
+      'Fibroid and ovarian cyst assessment',
+      'In-clinic investigations and follow-up',
     ],
     price: '700',
     unit: 'visit',
-    image: '/assets/clinic/vaccination-during-pregnancy.jpg',
-    alt: "A healthcare worker dressing a patient's arm after a vaccination",
+    image: '/assets/clinic/gynaecological-problems.jpg',
+    alt: 'A woman describing pelvic discomfort to the doctor at the clinic',
+  },
+  {
+    slug: 'adolescent-health',
+    title: 'Adolescent Health',
+    fullTitle: 'Adolescent Health & Puberty Care',
+    tags: ['Puberty', 'Cycles', 'HPV Vaccination'],
+    text: 'Gentle, private care for teenage girls — periods, puberty and hormonal concerns.',
+    intro:
+      'Confidential care for adolescent girls and their families — irregular or painful periods, puberty concerns, PCOS and nutrition, explained in a comfortable setting.',
+    includes: [
+      'Irregular or painful periods in teens',
+      'Puberty and growth-related concerns',
+      'PCOS and hormonal assessment',
+      'HPV vaccination',
+      'Nutrition and lifestyle counselling',
+    ],
+    price: '700',
+    unit: 'visit',
+    image: '/assets/clinic/adolescent-health.jpg',
+    alt: 'A teenage girl and her mother speaking with the doctor at the clinic',
+  },
+  {
+    slug: 'pcos-pmos',
+    title: 'PCOS / PMOS',
+    fullTitle: 'PCOS / PMOS, Periods & Hormones',
+    tags: ['Irregular Cycles', 'Thyroid', 'Weight Management'],
+    text: 'Long-term, practical management of PCOS, irregular cycles and hormonal imbalance.',
+    intro:
+      'Diagnosis and long-term management of PCOS, PMOS, menstrual disorders, thyroid dysfunction and hormonal imbalance — combining medical therapy with diet and lifestyle support.',
+    includes: [
+      'Weight management counselling',
+      'Treatment for irregular or painful periods',
+      'Thyroid and hormonal balance',
+      'Diet and lifestyle planning',
+    ],
+    price: '700',
+    unit: 'visit',
+    image: '/assets/clinic/pcos-pmos.jpg',
+    alt: 'A young woman reviewing her report with the doctor at the clinic',
+  },
+  {
+    slug: 'perimenopausal-problems',
+    title: 'Perimenopausal Problems',
+    fullTitle: 'Perimenopause & Menopause Care',
+    tags: ['Hot Flashes', 'Sleep Disturbances', 'Hormonal Issues'],
+    text: 'Support for hot flushes, mood, sleep disturbances and cycle changes around menopause.',
+    intro:
+      'Practical care through perimenopause and menopause — managing hot flushes, sleep disturbance, mood changes, irregular periods and bone health with a personalised plan.',
+    includes: [
+      'Assessment of perimenopausal symptoms',
+      'Hormonal issues and thyroid evaluation',
+      'Bone and heart health guidance',
+      'Lifestyle, sleep disturbances and nutrition support',
+    ],
+    price: '700',
+    unit: 'visit',
+    image: '/assets/clinic/perimenopausal-care.jpg',
+    alt: 'An older woman discussing menopausal symptoms with the doctor',
   },
   {
     slug: 'cancer-detection',
     title: 'Cancer Detection',
     fullTitle: 'Cervical & Gynaecological Cancer Detection',
-    tags: ['PAP Smear', 'Colposcopy', 'HPV'],
+    tags: ['PAP Smear', 'Colposcopy', 'HPV Vaccination'],
     text: 'PAP smear, colposcopy and HPV vaccination for early detection and prevention.',
     intro:
       'Cervical and gynaecological cancer screening with PAP smear, colposcopy and endometrial biopsy, plus HPV vaccination — completed comfortably in the clinic.',
     includes: [
       'PAP smear and cervical screening',
       'Colposcopy and endometrial biopsy',
-      'HPV and cervical cancer vaccination',
+      'HPV vaccination',
       'In-clinic lab investigations',
     ],
     price: '700',
@@ -270,6 +254,25 @@ export const services = [
     image: '/assets/clinic/family-planning.jpg',
     alt: 'A doctor counselling a patient about family planning options',
   },
+  {
+    slug: 'vaccination-during-pregnancy',
+    title: 'Vaccination',
+    fullTitle: 'Vaccination — Flu & Tdap',
+    tags: ['Flu Vaccine', 'Tdap', 'Vaccination'],
+    text: 'Flu and Tdap vaccination — safe for you, and protective for your baby in the first months.',
+    intro:
+      'Recommended vaccination — influenza (flu) and Tdap (tetanus, diphtheria and whooping cough) — timed appropriately, with counselling on safety, side effects and the protection that passes to your baby.',
+    includes: [
+      'Influenza (flu) vaccine',
+      'Tdap vaccination',
+      'Counselling on vaccine safety',
+      'Vaccination record and follow-up',
+    ],
+    price: '700',
+    unit: 'visit',
+    image: '/assets/clinic/vaccination-during-pregnancy.jpg',
+    alt: "A healthcare worker dressing a patient's arm after a vaccination",
+  },
 ]
 
 export const reasons = [
@@ -291,17 +294,19 @@ export const reasons = [
   {
     icon: '/assets/template/icon-why-consultation.webp',
     title: 'Associated Hospital',
-    text: 'Cloud 9, Motherland, Sarvodaya, LYF, Motherhood Sector-45 and Others.',
+    text: 'Cloud 9, Yatharth, Motherland, Sarvodaya, LYF, Motherhood Sector-45 and Others.',
   },
 ]
 
 export const focusAreas = [
-  'Antenatal & Gynaecological Care',
+  'Antenatal Care',
+  'High Risk Pregnancy',
+  'Fertility Care',
   'Pregnancy Care',
-  'Vaginal Hysterectomy',
-  'Avoiding Pregnancy',
+  'Vaginal Hysterectomy (NDVH)',
+  'Adolescent Health Issues',
   'Menopause Advice',
-  'Laser Vaginal Tightening',
+  'Lap/Open Surgeries',
 ]
 
 export const credentials = [
@@ -309,7 +314,7 @@ export const credentials = [
   'MD, (OBGYN) Lady Hardinge Medical College',
   'Training in Assisted Reproductive Techniques (IVF) — Institute of Reproductive Medicine, Kolkata',
   'Member — AOGD & FOGSI',
-  'Associated with Cloud 9, Motherland, Sarvodaya, LYF, Motherhood Sector-45 and other hospitals with economical packages',
+  'Associated with Cloud 9, Yatharth, Motherland, Sarvodaya, LYF, Motherhood Sector-45 and other hospitals with economical packages',
 ]
 
 export const visitSteps = [
@@ -452,13 +457,13 @@ export const carePrograms = [
     ],
   },
   {
-    name: 'The Antenatal & Gynaecological Care',
+    name: 'The Antenatal Care',
     description: 'Best for pregnancy care',
     price: 'On request',
     unit: '',
     featured: true,
     features: [
-      'Monthly visits during Antenatal & Gynaecological Care',
+      'Monthly visits during Antenatal Care',
       'Painless delivery planning',
       'Scans & lab work in clinic',
       'Hospital coordination',
@@ -544,7 +549,7 @@ export const gmbProducts = [
 ]
 
 export const gmbCare = [
-  'Antenatal & Gynaecological Care and postnatal care',
+  'Antenatal care and postnatal care',
   'Fertility consultation',
   'High-risk pregnancy management',
   'Cervical cancer screening (PAP smear) & vaccination',
@@ -564,7 +569,7 @@ export const faqs = [
   {
     question: 'What are the clinic OPD timings?',
     answer:
-      'Monday to Saturday 6:30 pm to 8:30 pm, and Saturday and Sunday 11:30 am to 1:30 pm. Timings can occasionally vary with emergency hospital commitments, so a quick call to 096502 91732 before leaving is recommended.',
+      'Monday to Friday 5:30 pm to 8:00 pm, and Saturday and Sunday 11:30 am to 1:30 pm. Timings can occasionally vary with emergency hospital commitments, so a quick call to 096502 91732 before leaving is recommended.',
   },
   {
     question: 'Do I need an appointment or can I walk in?',
@@ -574,7 +579,7 @@ export const faqs = [
   {
     question: 'Where does Dr Rashmi Saxena deliver babies and perform surgeries?',
     answer:
-      'Deliveries — including normal and painless normal delivery — and surgeries are performed at Cloud 9, Motherland, Sarvodaya, LYF, Motherhood Sector-45, and other hospitals in Noida that offer economical packages.',
+      'Deliveries — including normal and painless normal delivery — and surgeries are performed at Cloud 9, Yatharth, Motherland, Sarvodaya, LYF, Motherhood Sector-45, and other hospitals in Noida that offer economical packages.',
   },
   {
     question: 'What is the consultation fee and which payment methods are accepted?',

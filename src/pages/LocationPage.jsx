@@ -9,7 +9,7 @@ export default function LocationPage() {
     <>
       <Seo
         title="Location & Hours — Dr Rashmi Saxena, Gaur City 2"
-        description="Find Dr Rashmi Saxena's Women's Clinic at Shop No 15, First Floor, High Street Market, 14th Avenue, Gaur City 2, Greater Noida. OPD Mon–Sat 6:30–8:30 pm and Sat–Sun 11:30 am–1:30 pm."
+        description="Find Dr Rashmi Saxena's Women's Clinic at Shop No 15, First Floor, High Street Market, 14th Avenue, Gaur City 2, Greater Noida. OPD Mon–Fri 5:30–8:00 pm and Sat–Sun 11:30 am–1:30 pm."
       />
       <PageHero
         eyebrow="Location & Hours"

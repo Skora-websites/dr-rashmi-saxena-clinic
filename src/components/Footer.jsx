@@ -3,17 +3,17 @@ import { clinic } from '../data/content'
 
 const careLinks = [
   ['Preconception Counselling', '/services/preconception-counselling'],
-  ['Antenatal & Gynaecological Care', '/services/antenatal-care'],
+  ['Antenatal Care', '/services/antenatal-care'],
   ['Delivery', '/services/delivery'],
-  ['Adolescent Health', '/services/adolescent-health'],
-  ['Perimenopausal Problems', '/services/perimenopausal-problems'],
-  ['Gynaecological Problems', '/services/gynaecological-problems'],
-  ['PCOS / PMOS', '/services/pcos-pmos'],
   ['Gynaecological Surgeries', '/services/gynaecological-surgeries'],
   ['Vaginal Surgeries', '/services/vaginal-surgeries'],
-  ['Vaccination During Pregnancy', '/services/vaccination-during-pregnancy'],
+  ['Gynaecological Problems', '/services/gynaecological-problems'],
+  ['Adolescent Health', '/services/adolescent-health'],
+  ['PCOS / PMOS', '/services/pcos-pmos'],
+  ['Perimenopausal Problems', '/services/perimenopausal-problems'],
   ['Cancer Detection', '/services/cancer-detection'],
   ['Family Planning Counselling', '/services/family-planning'],
+  ['Vaccination', '/services/vaccination-during-pregnancy'],
 ]
 
 const clinicLinks = [

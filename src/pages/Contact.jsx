@@ -96,6 +96,7 @@ export default function Contact() {
                       <p className="contact_block-label">Associated Hospitals</p>
                       <p className="contact_block-text">
                         <span>Cloud 9</span>
+                        <span>Yatharth</span>
                         <span>Motherland</span>
                         <span>Sarvodaya</span>
                         <span>LYF</span>
