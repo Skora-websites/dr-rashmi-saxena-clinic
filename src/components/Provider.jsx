@@ -16,6 +16,19 @@ export default function Provider() {
           <div className="provider_bio-header">
             <p className="provider_bio-label">Meet Your Doctor</p>
           </div>
+          <div className="provider_mobile-photo">
+            <img
+              src="/assets/clinic/doctor-mobile.jpg"
+              loading="lazy"
+              width="720"
+              height="900"
+              alt="Dr Rashmi Saxena seated at her desk in the clinic"
+              className="provider_mobile-photo-image"
+            />
+            <div className="provider_name-tag">
+              <p className="provider_name">Dr Rashmi Saxena</p>
+            </div>
+          </div>
           <div className="provider_bio-body">
             <p className="provider_bio-text">
               Dr Rashmi Saxena has cared for women through pregnancy, fertility and gynaecological

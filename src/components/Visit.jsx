@@ -39,8 +39,8 @@ export default function Visit() {
                     <img
                       src={step.image}
                       loading="lazy"
-                      width="304"
-                      height="325"
+                      width="720"
+                      height="800"
                       alt={step.alt}
                       className="visit_image"
                     />

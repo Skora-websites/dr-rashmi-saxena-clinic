@@ -2565,3 +2565,25 @@ html.menu-open .whatsapp-float {
     background-color: rgba(255, 255, 255, 0.9);
   }
 }
+
+/* ---------- mobile doctor card ---------- */
+.provider_mobile-photo {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .provider_mobile-photo {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 18px;
+    background-color: #e9e4f2;
+    box-shadow: 0 22px 42px -34px rgba(40, 48, 68, 0.7);
+  }
+
+  .provider_mobile-photo-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

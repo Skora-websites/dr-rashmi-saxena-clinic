@@ -58,8 +58,8 @@ export const services = [
     ],
     price: '700',
     unit: 'visit',
-    image: '/assets/clinic/consultation.jpg',
-    alt: 'A couple discussing a care plan with the doctor at the clinic desk',
+    image: '/assets/clinic/preconception-counselling.jpg',
+    alt: 'A doctor counselling a couple about preconception care at the clinic desk',
   },
   {
     slug: 'antenatal-care',
@@ -77,8 +77,8 @@ export const services = [
     ],
     price: '700',
     unit: 'visit',
-    image: '/assets/clinic/gynecologist-consultation.jpg',
-    alt: 'A pregnant woman in consultation with the doctor at the clinic',
+    image: '/assets/clinic/antenatal-care.jpg',
+    alt: 'A doctor examining a pregnant woman during an antenatal visit',
   },
   {
     slug: 'delivery',
@@ -328,20 +328,20 @@ export const visitSteps = [
     title: 'A Plan, and a Cost',
     text: 'You leave with a clear plan and an exact cost — tests, scans and treatment explained before anything is booked.',
     highlight: 'exact cost',
-    image: '/assets/clinic/doctor-at-desk.jpg',
-    alt: 'Dr Rashmi Saxena writing notes at her desk',
+    image: '/assets/clinic/first-visit-plan.jpg',
+    alt: 'Dr Rashmi Saxena at her desk explaining the care plan and cost',
   },
   {
     title: 'Tests, Under One Roof',
     text: 'Blood work, PAP smears, colposcopy and scans are done in the clinic, so you are not sent between labs.',
-    image: '/assets/clinic/consulting-room.jpg',
-    alt: 'The clinic examination room prepared for a patient',
+    image: '/assets/clinic/first-visit-tests.jpg',
+    alt: 'Dr Rashmi Saxena at the clinic desk where tests and reports are reviewed',
   },
   {
     title: 'Follow-Up, Included',
     text: 'We review your reports together and adjust the plan if needed. Your questions are always welcome.',
-    image: '/assets/clinic/reception.jpg',
-    alt: 'The clinic reception desk',
+    image: '/assets/clinic/first-visit-followup.jpg',
+    alt: 'Dr Rashmi Saxena with a mother and her newborn during a follow-up visit',
   },
 ]
 
