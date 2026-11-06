@@ -5,5 +5,6 @@ import './styles/webflow.css'
 import './styles/theme.css'
 import './styles/hero.css'
 import './styles/why.css'
+import './styles/marquee.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />)

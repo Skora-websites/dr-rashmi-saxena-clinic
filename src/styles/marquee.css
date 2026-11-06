@@ -1,0 +1,70 @@
+/* Auto-scrolling clinic gallery strip (below the hero) */
+
+:root {
+  --marquee-gap: 18px;
+  --marquee-speed: 40s;
+}
+
+.section_marquee {
+  background-color: var(--brand-blush);
+  padding: clamp(2.25rem, 4vw, 3.5rem) 0 clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.marquee-strip {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll var(--marquee-speed) linear infinite;
+  will-change: transform;
+}
+
+.marquee-set {
+  display: flex;
+}
+
+.marquee-card {
+  flex: none;
+  width: 300px;
+  height: 210px;
+  margin-right: var(--marquee-gap);
+  border-radius: 18px;
+  border: 3px solid #efe7fa;
+  box-shadow: 0 10px 26px rgba(76, 42, 105, 0.14);
+  object-fit: cover;
+}
+
+.marquee-strip:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .marquee-card {
+    width: 200px;
+    height: 140px;
+    margin-right: 12px;
+    border-radius: 14px;
+    border-width: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  .marquee-strip {
+    overflow-x: auto;
+  }
+}

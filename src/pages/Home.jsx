@@ -1,5 +1,6 @@
 import Seo from '../components/Seo'
 import Hero from '../components/Hero'
+import MarqueeGallery from '../components/MarqueeGallery'
 import Why from '../components/Why'
 import ServicesSlider from '../components/ServicesSlider'
 import Provider from '../components/Provider'
@@ -20,6 +21,7 @@ export default function Home() {
         description="Dr Rashmi Saxena's Women's Clinic — senior obstetrician, gynaecologist and fertility specialist in Gaur City 2, Greater Noida. Pregnancy care, fertility consultation, PCOS support, PAP smear, vaccination and gynaecological surgery."
       />
       <Hero />
+      <MarqueeGallery />
       <Why />
       <ServicesSlider />
       <Provider />
