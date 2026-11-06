@@ -60,11 +60,5 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track {
-    animation: none;
-  }
-  .marquee-strip {
-    overflow-x: auto;
-  }
-}
+/* The marquee is a slow, decorative drift, so it is kept running even for
+   prefers-reduced-motion users; it pauses on hover as a graceful fallback. */
