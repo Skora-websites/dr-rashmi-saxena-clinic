@@ -28,17 +28,24 @@
 
 .marquee-card {
   flex: none;
-  width: 300px;
-  height: 210px;
+  width: 240px;
+  height: 320px;
   margin-right: var(--marquee-gap);
   border-radius: 18px;
   border: 3px solid #efe7fa;
   box-shadow: 0 10px 26px rgba(76, 42, 105, 0.14);
+  background-color: #e7e2ef;
   object-fit: cover;
+  object-position: 50% 26%;
 }
 
 .marquee-strip:hover .marquee-track {
   animation-play-state: paused;
+}
+
+/* Mobile keeps four photos in the page grid instead of the edge-to-edge strip */
+.marquee-grid {
+  display: none;
 }
 
 @keyframes marquee-scroll {
@@ -51,14 +58,40 @@
 }
 
 @media (max-width: 767px) {
-  .marquee-card {
-    width: 200px;
-    height: 140px;
-    margin-right: 12px;
+  .section_marquee {
+    padding: 1.75rem 0 2.25rem;
+  }
+
+  .marquee-strip {
+    display: none;
+  }
+
+  .marquee-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    padding: 0 var(--_responsive---padding-global, 1.5rem);
+  }
+
+  .marquee-grid-card {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
     border-radius: 14px;
-    border-width: 2px;
+    border: 2px solid #efe7fa;
+    box-shadow: 0 10px 24px rgba(76, 42, 105, 0.14);
+    background-color: #e7e2ef;
+    object-fit: cover;
+    object-position: 50% 26%;
   }
 }
 
-/* The marquee is a slow, decorative drift, so it is kept running even for
-   prefers-reduced-motion users; it pauses on hover as a graceful fallback. */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  .marquee-strip {
+    overflow-x: auto;
+  }
+}

@@ -1,13 +1,15 @@
 const galleryImages = [
-  { src: '/assets/clinic/gallery/gallery-01.jpg', alt: 'Inside Dr Rashmi Saxena’s clinic' },
-  { src: '/assets/clinic/gallery/gallery-02.jpg', alt: 'Inside Dr Rashmi Saxena’s clinic' },
-  { src: '/assets/clinic/gallery/gallery-03.jpg', alt: 'Inside Dr Rashmi Saxena’s clinic' },
-  { src: '/assets/clinic/gallery/gallery-04.jpg', alt: 'Inside Dr Rashmi Saxena’s clinic' },
-  { src: '/assets/clinic/gallery/gallery-05.jpg', alt: 'Inside Dr Rashmi Saxena’s clinic' },
-  { src: '/assets/clinic/gallery/gallery-06.jpg', alt: 'Inside Dr Rashmi Saxena’s clinic' },
-  { src: '/assets/clinic/gallery/gallery-07.jpg', alt: 'Inside Dr Rashmi Saxena’s clinic' },
-  { src: '/assets/clinic/gallery/gallery-08.jpg', alt: 'Inside Dr Rashmi Saxena’s clinic' },
+  { src: '/assets/clinic/gallery/gallery-01.jpg', alt: 'A mother with her newborn at the clinic' },
+  { src: '/assets/clinic/gallery/gallery-02.jpg', alt: 'A family with their newborn and Dr Rashmi Saxena' },
+  { src: '/assets/clinic/gallery/gallery-03.jpg', alt: 'Parents holding their newborn with Dr Rashmi Saxena' },
+  { src: '/assets/clinic/gallery/gallery-04.jpg', alt: 'A newborn resting with his mother' },
+  { src: '/assets/clinic/gallery/gallery-05.jpg', alt: 'A mother holding her newborn baby' },
+  { src: '/assets/clinic/gallery/gallery-06.jpg', alt: 'A mother resting with her newborn' },
+  { src: '/assets/clinic/gallery/gallery-07.jpg', alt: 'A mother with her newborn after delivery' },
+  { src: '/assets/clinic/gallery/gallery-08.jpg', alt: 'A mother with her newborn in the delivery room' },
 ]
+
+const mobileGallery = [galleryImages[1], galleryImages[2], galleryImages[4], galleryImages[7]]
 
 export default function MarqueeGallery() {
   return (
@@ -22,14 +24,27 @@ export default function MarqueeGallery() {
                   src={image.src}
                   alt={copy === 0 ? image.alt : ''}
                   loading="lazy"
-                  width="300"
-                  height="210"
+                  width="240"
+                  height="320"
                   key={`${copy}-${image.src}`}
                 />
               ))}
             </div>
           ))}
         </div>
+      </div>
+      <div className="marquee-grid">
+        {mobileGallery.map((image) => (
+          <img
+            className="marquee-grid-card"
+            src={image.src}
+            alt={image.alt}
+            loading="lazy"
+            width="480"
+            height="600"
+            key={image.src}
+          />
+        ))}
       </div>
     </section>
   )
