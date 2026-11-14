@@ -7,6 +7,11 @@ const galleryImages = [
   { src: '/assets/clinic/gallery/cards/gallery-06.jpg', alt: 'A mother resting with her newborn' },
   { src: '/assets/clinic/gallery/cards/gallery-07.jpg', alt: 'A mother with her newborn after delivery' },
   { src: '/assets/clinic/gallery/cards/gallery-08.jpg', alt: 'A mother with her newborn in the delivery room' },
+  { src: '/assets/clinic/gallery/cards/gallery-09.jpg', alt: 'Dr Rashmi Saxena holding a newborn in a blue star blanket' },
+  { src: '/assets/clinic/gallery/cards/gallery-10.jpg', alt: 'Dr Rashmi Saxena at her consultation desk' },
+  { src: '/assets/clinic/gallery/cards/gallery-11.jpg', alt: 'A mother with her newborn and Dr Rashmi Saxena' },
+  { src: '/assets/clinic/gallery/cards/gallery-12.jpg', alt: 'Parents with their newborn and Dr Rashmi Saxena' },
+  { src: '/assets/clinic/gallery/cards/gallery-13.jpg', alt: 'A family with their newborn and Dr Rashmi Saxena' },
 ]
 
 export default function MarqueeGallery() {
