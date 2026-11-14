@@ -326,16 +326,16 @@ export const visitSteps = [
   },
   {
     title: 'A Plan, and a Cost',
-    text: 'You leave with a clear plan and an exact cost — tests, scans and treatment explained before anything is booked.',
+    text: 'You leave with a clear plan and an exact cost — tests and treatment explained before anything is booked.',
     highlight: 'exact cost',
     image: '/assets/clinic/first-visit-plan.jpg',
     alt: 'Dr Rashmi Saxena at her desk explaining the care plan and cost',
   },
   {
     title: 'Tests, Under One Roof',
-    text: 'Blood work, PAP smears, colposcopy and scans are done in the clinic, so you are not sent between labs.',
+    text: 'Blood work, PAP smears and colposcopy are done in the clinic, so you are not sent between labs.',
     image: '/assets/clinic/first-visit-tests.jpg',
-    alt: 'Dr Rashmi Saxena at the clinic desk where tests and reports are reviewed',
+    alt: 'A nurse drawing blood from a pregnant patient at the clinic, with an ultrasound monitor behind them',
   },
   {
     title: 'Follow-Up, Included',
