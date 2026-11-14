@@ -141,6 +141,12 @@ body {
   white-space: nowrap;
 }
 
+@media screen and (max-width: 767px) {
+  .navbar_banner .navbar_banner-text {
+    font-size: 11.5px;
+  }
+}
+
 .navbar_menu-contact-block {
   margin-left: auto;
   text-align: right;

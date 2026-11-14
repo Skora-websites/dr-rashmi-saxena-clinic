@@ -17,7 +17,11 @@ export default function PageCta({
                 {title}
               </h2>
               <p className="page-cta_text">{text}</p>
-              <p className="page-cta_hours">{clinic.hoursLabel}</p>
+              <p className="page-cta_hours">
+                {clinic.hoursLines[0]}
+                <br />
+                {clinic.hoursLines[1]}
+              </p>
             </div>
             <div className="page-cta_actions">
               <Link to="/book" className="page-cta_button">

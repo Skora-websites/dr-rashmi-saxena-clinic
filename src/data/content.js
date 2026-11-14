@@ -17,6 +17,10 @@ export const clinic = {
   ],
   hoursLabel:
     'Mon to Sat 6:00\u00a0pm to 8:00\u00a0pm · Morning OPD only on Sat & Sun 11:30\u00a0am to 1:30\u00a0pm',
+  hoursLines: [
+    'Mon to Sat 6:00\u00a0pm to 8:00\u00a0pm',
+    'Morning OPD only on Sat & Sun 11:30\u00a0am to 1:30\u00a0pm',
+  ],
   hours: [
     {
       days: 'Mon to Sat',

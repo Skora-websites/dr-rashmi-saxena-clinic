@@ -136,7 +136,9 @@ export default function Navbar() {
                 <path d="M8 3.5v4M16 3.5v4M3.5 10.5h17" />
               </svg>
               <span>
-                {clinic.hoursLabel}
+                {clinic.hoursLines[0]}
+                <br />
+                {clinic.hoursLines[1]}
                 <span className="navbar_banner-note"> · Walk-ins welcome</span>
               </span>
             </p>
@@ -252,7 +254,11 @@ export default function Navbar() {
                   </Link>
                   <div className="navbar_menu-contact-block">
                     <p className="navbar_menu-contact">{clinic.addressShort}</p>
-                    <p className="navbar_menu-contact">{clinic.hoursLabel}</p>
+                    {clinic.hoursLines.map((line) => (
+                      <p className="navbar_menu-contact" key={line}>
+                        {line}
+                      </p>
+                    ))}
                   </div>
                 </div>
               </div>
