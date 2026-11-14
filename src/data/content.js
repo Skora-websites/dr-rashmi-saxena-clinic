@@ -15,7 +15,8 @@ export const clinic = {
     'Rani Laxmibai Nagar, Yusufpur, Gaur City 2',
     'Greater Noida, Uttar Pradesh 201009',
   ],
-  hoursLabel: 'Evening OPD Mon – Sat 6:00–8:00 pm · Morning OPD Sat & Sun 11:30 am–1:30 pm',
+  hoursLabel:
+    'Evening OPD Mon – Sat 6:00 pm – 8:00 pm · Morning OPD Sat & Sun 11:30 am – 1:30 pm',
   hours: [
     {
       days: 'Monday – Saturday',
