@@ -16,19 +16,19 @@ export const clinic = {
     'Greater Noida, Uttar Pradesh 201009',
   ],
   hoursLabel:
-    'Evening OPD Mon – Sat 6:00 pm – 8:00 pm · Morning OPD Sat & Sun 11:30 am – 1:30 pm',
+    'Mon to Sat 6:00\u00a0pm to 8:00\u00a0pm · Morning OPD only on Sat & Sun 11:30\u00a0am to 1:30\u00a0pm',
   hours: [
     {
-      days: 'Monday – Saturday',
-      time: '6:00 PM – 8:00 PM',
+      days: 'Mon to Sat',
+      time: '6:00\u00a0pm to 8:00\u00a0pm',
     },
     {
-      days: 'Saturday & Sunday',
-      time: '11:30 AM – 1:30 PM',
+      days: 'Morning OPD only on Sat & Sun',
+      time: '11:30\u00a0am to 1:30\u00a0pm',
     },
   ],
   hoursNote:
-    'Evening OPD runs Monday to Saturday; morning OPD is available only on Saturday and Sunday. Timings can occasionally vary with emergency hospital commitments, so a quick call before leaving is recommended.',
+    'Evening OPD runs Monday to Saturday, and morning OPD is only on Saturday and Sunday. Timings can occasionally vary with emergency hospital commitments, so a quick call before leaving is recommended.',
   rating: '4.9',
   reviewCount: '166',
   maps: 'https://www.google.com/maps/search/?api=1&query=BEST+GYNAECOLOGIST+DR+RASHMI+SAXENA+Gaur+City+2',
@@ -570,7 +570,7 @@ export const faqs = [
   {
     question: 'What are the clinic OPD timings?',
     answer:
-      'Evening OPD runs Monday to Saturday from 6:00 pm to 8:00 pm, and morning OPD is available only on Saturday and Sunday from 11:30 am to 1:30 pm. Timings can occasionally vary with emergency hospital commitments, so a quick call to 096502 91732 before leaving is recommended.',
+      'Mon to Sat 6:00 pm to 8:00 pm, and Morning OPD only on Sat & Sun 11:30 am to 1:30 pm. Timings can occasionally vary with emergency hospital commitments, so a quick call to 096502 91732 before leaving is recommended.',
   },
   {
     question: 'Do I need an appointment or can I walk in?',

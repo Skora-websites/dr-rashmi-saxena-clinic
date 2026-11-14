@@ -8,15 +8,15 @@ const interests = [
 ]
 
 const times = [
-  '6:00 PM',
-  '6:30 PM',
-  '7:00 PM',
-  '7:30 PM',
-  '8:00 PM',
-  '11:30 AM',
-  '12:00 PM',
-  '12:30 PM',
-  '1:00 PM',
+  '6:00 pm',
+  '6:30 pm',
+  '7:00 pm',
+  '7:30 pm',
+  '8:00 pm',
+  '11:30 am',
+  '12:00 pm',
+  '12:30 pm',
+  '1:00 pm',
 ]
 
 function formatDateForMessage(value) {
