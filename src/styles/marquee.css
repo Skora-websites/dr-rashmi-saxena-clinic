@@ -2,7 +2,7 @@
 
 :root {
   --marquee-gap: 18px;
-  --marquee-speed: 40s;
+  --marquee-speed: 42s;
 }
 
 .section_marquee {
@@ -26,26 +26,22 @@
   display: flex;
 }
 
+/* 4:5 frame matches the pre-cropped card images, so nothing is cut */
 .marquee-card {
   flex: none;
-  width: 240px;
-  height: 320px;
+  width: 236px;
+  height: auto;
+  aspect-ratio: 4 / 5;
   margin-right: var(--marquee-gap);
   border-radius: 18px;
   border: 3px solid #efe7fa;
   box-shadow: 0 10px 26px rgba(76, 42, 105, 0.14);
   background-color: #e7e2ef;
   object-fit: cover;
-  object-position: 50% 26%;
 }
 
 .marquee-strip:hover .marquee-track {
   animation-play-state: paused;
-}
-
-/* Mobile keeps four photos in the page grid instead of the edge-to-edge strip */
-.marquee-grid {
-  display: none;
 }
 
 @keyframes marquee-scroll {
@@ -57,33 +53,33 @@
   }
 }
 
+@media (max-width: 991px) {
+  .marquee-card {
+    width: 208px;
+  }
+}
+
 @media (max-width: 767px) {
+  :root {
+    --marquee-gap: 12px;
+    --marquee-speed: 32s;
+  }
+
   .section_marquee {
     padding: 1.75rem 0 2.25rem;
   }
 
-  .marquee-strip {
-    display: none;
-  }
-
-  .marquee-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
-    padding: 0 var(--_responsive---padding-global, 1.5rem);
-  }
-
-  .marquee-grid-card {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 5;
+  .marquee-card {
+    width: 176px;
     border-radius: 14px;
-    border: 2px solid #efe7fa;
-    box-shadow: 0 10px 24px rgba(76, 42, 105, 0.14);
-    background-color: #e7e2ef;
-    object-fit: cover;
-    object-position: 50% 26%;
+    border-width: 2px;
+    box-shadow: 0 8px 20px rgba(76, 42, 105, 0.14);
+  }
+}
+
+@media (max-width: 420px) {
+  .marquee-card {
+    width: 156px;
   }
 }
 
