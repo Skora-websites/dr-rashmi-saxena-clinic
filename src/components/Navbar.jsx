@@ -136,7 +136,7 @@ export default function Navbar() {
                 <path d="M8 3.5v4M16 3.5v4M3.5 10.5h17" />
               </svg>
               <span>
-                Evening OPD Mon–Fri 5:30–8:00 pm
+                Evening OPD Mon–Sat 6:00–8:00 pm
                 <span className="navbar_banner-note"> · Walk-ins welcome</span>
               </span>
             </p>
@@ -251,7 +251,7 @@ export default function Navbar() {
                     <div className="navbar_button-text">Book an Appointment</div>
                   </Link>
                   <p className="navbar_menu-contact">
-                    {clinic.addressShort} · Mon–Fri, 5:30–8:00 pm
+                    {clinic.addressShort} · Mon–Sat, 6:00–8:00 pm
                   </p>
                 </div>
               </div>

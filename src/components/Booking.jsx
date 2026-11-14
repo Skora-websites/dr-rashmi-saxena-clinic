@@ -8,7 +8,6 @@ const interests = [
 ]
 
 const times = [
-  '5:30 PM',
   '6:00 PM',
   '6:30 PM',
   '7:00 PM',
@@ -79,8 +78,8 @@ export default function Booking() {
                   <img
                     src="/assets/clinic/storefront.jpg"
                     loading="lazy"
-                    width="424"
-                    height="297"
+                    width="600"
+                    height="1280"
                     alt="The clinic storefront at 14th Avenue High Street Market, Gaur City 2"
                     className="booking_image"
                   />

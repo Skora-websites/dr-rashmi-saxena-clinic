@@ -115,11 +115,11 @@ export default function Contact() {
                     className="contact_logo"
                   />
                   <img
-                    src="/assets/clinic/waiting-room.jpg"
+                    src="/assets/clinic/clinic-entrance.jpg"
                     loading="lazy"
-                    width="1200"
-                    height="800"
-                    alt="The waiting area at Dr Rashmi Saxena's clinic"
+                    width="900"
+                    height="675"
+                    alt="The entrance to Dr Rashmi Saxena's clinic at Gaur City 2"
                     className="contact_image"
                   />
                   <p className="contact_aside-text">

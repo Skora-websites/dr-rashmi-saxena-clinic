@@ -451,6 +451,29 @@ html.menu-open .navbar_logo-link {
   filter: saturate(0.96);
 }
 
+/* Whole storefront is visible; the neighbouring shutter is cropped off the left */
+.booking_image {
+  aspect-ratio: 600 / 1280;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Keep the booking form aligned with the top of the tall storefront photo */
+@media screen and (min-width: 992px) {
+  .booking_form-wrapper {
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+  }
+}
+
+/* Tablet: the portrait storefront makes the aside two-column row tall, so
+   centre the FAQ text beside it instead of dropping it to the bottom */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .booking_aside {
+    align-items: center;
+  }
+}
+
 /* ---------- single-line text price ---------- */
 .memberships_price.is-text {
   font-size: 2.25rem;

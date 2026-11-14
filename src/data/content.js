@@ -15,11 +15,11 @@ export const clinic = {
     'Rani Laxmibai Nagar, Yusufpur, Gaur City 2',
     'Greater Noida, Uttar Pradesh 201009',
   ],
-  hoursLabel: 'Mon – Fri 5:30–8:00 pm · Sat & Sun 11:30 am–1:30 pm',
+  hoursLabel: 'Evening OPD Mon – Sat 6:00–8:00 pm · Morning OPD Sat & Sun 11:30 am–1:30 pm',
   hours: [
     {
-      days: 'Monday – Friday',
-      time: '5:30 PM – 8:00 PM',
+      days: 'Monday – Saturday',
+      time: '6:00 PM – 8:00 PM',
     },
     {
       days: 'Saturday & Sunday',
@@ -27,7 +27,7 @@ export const clinic = {
     },
   ],
   hoursNote:
-    'Timings can occasionally vary with emergency hospital commitments. A quick call before leaving is always recommended.',
+    'Evening OPD runs Monday to Saturday; morning OPD is available only on Saturday and Sunday. Timings can occasionally vary with emergency hospital commitments, so a quick call before leaving is recommended.',
   rating: '4.9',
   reviewCount: '166',
   maps: 'https://www.google.com/maps/search/?api=1&query=BEST+GYNAECOLOGIST+DR+RASHMI+SAXENA+Gaur+City+2',
@@ -103,7 +103,7 @@ export const services = [
   {
     slug: 'gynaecological-surgeries',
     title: 'Gynaecological Surgeries',
-    fullTitle: 'Gynaecological Surgeries (Open)',
+    fullTitle: 'Gynaecological Surgeries (Open & Laproscopic)',
     tags: ['Open', 'Laparoscopy', 'Hysteroscopy'],
     text: 'Open, laparoscopic and other gynaecological procedures at our associated hospitals — Cloud 9, Yatharth, Motherland & Sarvodaya.',
     intro:
@@ -118,7 +118,7 @@ export const services = [
     price: '700',
     unit: 'visit',
     image: '/assets/clinic/gynaecological-surgery.jpg',
-    alt: 'A gynaecologist in surgical scrubs in a modern operating theatre',
+    alt: 'Dr Rashmi Saxena in surgical scrubs before a gynaecological procedure',
   },
   {
     slug: 'vaginal-surgeries',
@@ -569,7 +569,7 @@ export const faqs = [
   {
     question: 'What are the clinic OPD timings?',
     answer:
-      'Monday to Friday 5:30 pm to 8:00 pm, and Saturday and Sunday 11:30 am to 1:30 pm. Timings can occasionally vary with emergency hospital commitments, so a quick call to 096502 91732 before leaving is recommended.',
+      'Evening OPD runs Monday to Saturday from 6:00 pm to 8:00 pm, and morning OPD is available only on Saturday and Sunday from 11:30 am to 1:30 pm. Timings can occasionally vary with emergency hospital commitments, so a quick call to 096502 91732 before leaving is recommended.',
   },
   {
     question: 'Do I need an appointment or can I walk in?',
