@@ -107,11 +107,11 @@ export default function Footer() {
                     </div>
                   </div>
                   <img
-                    src="/assets/clinic/footer-storefront.jpg"
+                    src="/assets/clinic/footer-mother-baby.jpg"
                     loading="lazy"
-                    width="900"
-                    height="522"
-                    alt="The entrance to Dr Rashmi Saxena's Women's Clinic at Gaur City 2"
+                    width="678"
+                    height="452"
+                    alt="A mother holding her newborn close, foreheads touching"
                     className="footer_image"
                     data-footer-image
                   />
