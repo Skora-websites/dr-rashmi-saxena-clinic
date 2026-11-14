@@ -252,7 +252,7 @@ export const services = [
     price: '700',
     unit: 'visit',
     image: '/assets/clinic/family-planning.jpg',
-    alt: 'A doctor counselling a patient about family planning options',
+    alt: 'Dr Rashmi Saxena counselling a couple about family planning options',
   },
   {
     slug: 'vaccination-during-pregnancy',

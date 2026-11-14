@@ -107,11 +107,11 @@ export default function Footer() {
                     </div>
                   </div>
                   <img
-                    src="/assets/clinic/signboard.jpg"
+                    src="/assets/clinic/footer-storefront.jpg"
                     loading="lazy"
-                    width="635"
-                    height="375"
-                    alt="The clinic signboard at 14th Avenue High Street Market, Gaur City 2"
+                    width="900"
+                    height="522"
+                    alt="The entrance to Dr Rashmi Saxena's Women's Clinic at Gaur City 2"
                     className="footer_image"
                     data-footer-image
                   />
@@ -138,6 +138,17 @@ export default function Footer() {
                 />
               </a>
             </div>
+            <p className="footer_credit">
+              Designed by{' '}
+              <a
+                href="https://skorainfotech.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="footer_credit-link"
+              >
+                SkoraInfotech
+              </a>
+            </p>
           </div>
         </div>
       </div>
